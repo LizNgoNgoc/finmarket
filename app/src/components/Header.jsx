@@ -14,7 +14,11 @@ export default function Header() {
         </div>
         <hr className={styles.header_line}/>
         <nav className={styles.header_nav}>
-
+            <p className={styles.nav_paragraph}>Услуги</p>
+            <p className={styles.nav_paragraph}>Финансовые продукты</p>
+            <p className={styles.nav_paragraph}>Юридическая помощь</p>
+            <p className={styles.nav_paragraph}>Статьи</p>
+            <p className={styles.nav_paragraph}>О проекте</p>
         </nav>
     </header>
 }
