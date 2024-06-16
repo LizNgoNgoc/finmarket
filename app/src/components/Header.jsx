@@ -1,4 +1,5 @@
 import styles from './header.module.css'
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     return <header className={styles.header}>
@@ -14,11 +15,11 @@ export default function Header() {
         </div>
         <hr className={styles.header_line}/>
         <nav className={styles.header_nav}>
-            <p className={styles.nav_paragraph}>Услуги</p>
-            <p className={styles.nav_paragraph}>Финансовые продукты</p>
-            <p className={styles.nav_paragraph}>Юридическая помощь</p>
-            <p className={styles.nav_paragraph}>Статьи</p>
-            <p className={styles.nav_paragraph}>О проекте</p>
+            <Link className={styles.nav_paragraph}>Услуги</Link>
+            <Link className={styles.nav_paragraph}>Финансовые продукты</Link>
+            <Link className={styles.nav_paragraph}>Юридическая помощь</Link>
+            <Link className={styles.nav_paragraph}>Статьи</Link>
+            <Link className={styles.nav_paragraph}>О проекте</Link>
         </nav>
     </header>
 }
