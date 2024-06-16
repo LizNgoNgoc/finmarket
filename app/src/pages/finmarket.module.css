@@ -2,4 +2,5 @@
     background-color: #005193;
     height: 509px;
     display: flex;
+    max-width: 1440px;
 }
