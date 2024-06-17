@@ -1,9 +1,12 @@
+import styles from './finServiceRules.module.css'
+
 export default function FinServiceRules() {
-    return <section>
-        <div>
-            <h3>Как получить услугу на FinMarket.pro</h3>
-            <p>FinMarket.pro — это первый сайт, на котором вы сможете получить как физ. или юр. лицо финансовую услугу на самых выгодных условиях только от проверенных организаций на Торгах по «Голландской системе» или создав готовое предложение на которое могут откликнуться для предоставления займа.</p>
-            <b>ПОДРОБНЕЕ</b>
+    return <section className={styles.service_container}>
+        <hr className={styles.service_line}/>
+        <div className={styles.service_info}>
+            <h3 className={styles.service_header}>Как получить услугу на FinMarket.pro</h3>
+            <p className={styles.service_text}>FinMarket.pro — это первый сайт, на котором вы сможете получить как физ. или юр. лицо финансовую услугу на самых выгодных условиях только от проверенных организаций на Торгах по «Голландской системе» или создав готовое предложение на которое могут откликнуться для предоставления займа.</p>
+            <b className={styles.service_btn}>ПОДРОБНЕЕ</b>
         </div>
         <div>
             <div>
@@ -15,5 +18,6 @@ export default function FinServiceRules() {
                 <div></div>
             </div>
         </div>
+        <hr className={styles.service_line} />
     </section>
 }

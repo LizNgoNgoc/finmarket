@@ -1,0 +1,45 @@
+.service_container {
+    max-width: 1440px;
+}
+
+.service_line {
+    border: 2px solid rgb(178, 10, 33);
+}
+
+.service_info {
+    display: flex;
+    flex-direction: column;
+    width: 605px;
+    align-items: start;
+    gap: 30px;
+}
+
+.service_header {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    color: #1E222E;
+}
+
+.service_text {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1E222E;
+    text-align: start;
+}
+
+.service_btn {
+    width: 154px;
+    height: 47px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1E222E;
+    box-sizing: border-box;
+    border: 1px solid rgb(178, 10, 33);
+    border-radius: 6px;
+    padding-left: 23px;
+    padding-right: 25px;
+    padding-top: 14px;
+}
