@@ -22,6 +22,5 @@ export default function FormFin() {
         </div>
         <button className={styles.form_btn}>УЧАСТВОВАТЬ</button>
         </form>
-        
     </div>
 }
