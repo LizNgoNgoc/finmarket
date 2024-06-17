@@ -1,6 +1,33 @@
-.section_fin{
+.section_fin {
     background-color: #005193;
     height: 509px;
     display: flex;
     max-width: 1440px;
+}
+
+.fin_container {
+    width: 545px;
+    padding-top: 87px;
+    padding-left: 70px;
+}
+
+.scobe_up {
+    position: absolute;
+}
+
+.fin_pro {
+    position: relative;
+}
+
+.scobe_down {
+    position: absolute;
+}
+
+.text_fin {
+    margin-top: 52px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: start;
 }
