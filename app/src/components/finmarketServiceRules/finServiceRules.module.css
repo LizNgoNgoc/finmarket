@@ -1,6 +1,7 @@
 .service_container {
     max-width: 1440px;
     display: flex;
+    padding-left: 60px;
 }
 
 .service_line {
@@ -60,6 +61,7 @@
     position: absolute;
     display: flex;
     gap: 4.5px;
+    z-index: 999;
 }
 
 .num_container {
@@ -69,11 +71,22 @@
     background: rgb(255, 255, 255);
     width: 51px;
     height: 54px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+}
+
+.num_step {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 .text_container {
     position: relative;
-    left: 200px;
+    left: 25px;
     top: 20px;
     box-sizing: border-box;
     border: 1px solid rgb(178, 10, 33);
