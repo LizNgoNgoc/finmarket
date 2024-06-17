@@ -6,13 +6,15 @@
 }
 
 .fin_container {
-    width: 545px;
+    width: 645px;
     padding-top: 87px;
     padding-left: 70px;
 }
 
 .scobe_up {
     position: absolute;
+    top: 210px;
+    left: 35px;
 }
 
 .fin_pro {
@@ -21,6 +23,9 @@
 
 .scobe_down {
     position: absolute;
+    right: 0;
+    left: 640px;
+    top: 385px;
 }
 
 .text_fin {

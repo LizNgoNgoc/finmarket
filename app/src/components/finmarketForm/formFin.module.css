@@ -52,4 +52,18 @@
     font-family: Inter;
     font-size: 15px;
     font-size: 400;
+    width: 500px;
+
+}
+
+.form_btn {
+    width: 174px;
+    height: 47px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #B20A21;
+    color: white;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
 }
