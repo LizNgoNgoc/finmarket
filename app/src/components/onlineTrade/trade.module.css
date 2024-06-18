@@ -49,3 +49,19 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+.nav {
+    display: flex;
+    gap: 171px;
+    padding-right: 220px;
+    padding-left: 193px;
+}
+
+.nav_category {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #1E222E;
+    text-decoration: none;
+}

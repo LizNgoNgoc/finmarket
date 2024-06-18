@@ -8,20 +8,21 @@ export default function Trade() {
             <div className={styles.category_trades}>ТОРГИ ОНЛАЙН</div>
             <div className={styles.category_offers}>ГОТОВЫЕ ПРЕДЛОЖЕНИЯ</div>
         </div>
-        <div>
-            <nav>
-                <Link>ЗАЙМЫ</Link>
-                <Link>РЕФИНАНСИРОВАНИЕ</Link>
-                <Link>БАНКРОТСТВО</Link>
-                <Link>ВОЗВРАТ ДОЛГОВ</Link>
+            <nav className={styles.nav}>
+                <Link className={styles.nav_category}>ЗАЙМЫ</Link>
+                <Link className={styles.nav_category}>РЕФИНАНСИРОВАНИЕ</Link>
+                <Link className={styles.nav_category}>БАНКРОТСТВО</Link>
+                <Link className={styles.nav_category}>ВОЗВРАТ ДОЛГОВ</Link>
             </nav>
-            <table></table>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
             <div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-        </div>
         <div></div>
     </section>
 }
