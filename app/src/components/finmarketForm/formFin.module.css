@@ -1,13 +1,14 @@
 .form_container {
     min-width: 660px;
     background-color: #003E71;
+    height: 509px;
 }
 
 .nav_form {
     display: flex;
     gap: 20px;
     padding-top: 15px;
-    padding-left: 28px;
+    padding-left: 62px;
     padding-right: 18px;
 }
 
