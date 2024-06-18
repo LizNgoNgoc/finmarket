@@ -25,7 +25,16 @@ export default function Trade() {
                     <p className={styles.table_td}>НАС.ПУНКТ</p>
                     <p className={styles.table_td}>СТАТУС</p>
                 </div>
-                <div></div>
+                <div className={styles.table_names}>
+                    <p className={styles.table_td}>№</p>
+                    <p className={styles.table_td}>ОБЕСПЕЧЕНИЕ</p>
+                    <p className={styles.table_td}>СУММА/СРОК</p>
+                    <p className={styles.table_td}>ЗАЁМЩИК</p>
+                    <p className={styles.table_td}>УЧАСТНИКИ</p>
+                    <p className={styles.table_td}>ПРОЦЕНТ</p>
+                    <p className={styles.table_td}>НАС.ПУНКТ</p>
+                    <p className={styles.table_td}>СТАТУС</p>
+                </div>
             </div>
             <div>
                 <div></div>
