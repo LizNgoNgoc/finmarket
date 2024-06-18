@@ -55,6 +55,7 @@
     gap: 171px;
     padding-right: 220px;
     padding-left: 193px;
+    margin-bottom: 20px;
 }
 
 .nav_category {
@@ -64,4 +65,26 @@
     line-height: 19px;
     color: #1E222E;
     text-decoration: none;
+}
+
+.table_container {
+    display: flex;
+}
+
+.table_category {
+    width: 100%;
+    background-color: #E8ECFF;
+    padding-top: 31px;
+    padding-bottom: 33px;
+    padding-left: 17px;
+    padding-right: 222px;
+    display: flex;
+    gap: 70px;
+}
+
+.table_td {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
 }

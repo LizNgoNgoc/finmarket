@@ -14,8 +14,17 @@ export default function Trade() {
                 <Link className={styles.nav_category}>БАНКРОТСТВО</Link>
                 <Link className={styles.nav_category}>ВОЗВРАТ ДОЛГОВ</Link>
             </nav>
-            <div>
-                <div></div>
+            <div className={styles.table_container}>
+                <div className={styles.table_category}>
+                    <p className={styles.table_td}>№</p>
+                    <p className={styles.table_td}>ОБЕСПЕЧЕНИЕ</p>
+                    <p className={styles.table_td}>СУММА/СРОК</p>
+                    <p className={styles.table_td}>ЗАЁМЩИК</p>
+                    <p className={styles.table_td}>УЧАСТНИКИ</p>
+                    <p className={styles.table_td}>ПРОЦЕНТ</p>
+                    <p className={styles.table_td}>НАС.ПУНКТ</p>
+                    <p className={styles.table_td}>СТАТУС</p>
+                </div>
                 <div></div>
             </div>
             <div>
