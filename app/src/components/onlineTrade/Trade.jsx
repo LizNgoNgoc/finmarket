@@ -2,11 +2,11 @@ import styles from './trade.module.css'
 import { Link } from 'react-router-dom'
 
 export default function Trade() {
-    return <section>
-        <h2>Онлайн табло торгов и готовых предложений</h2>
-        <div>
-            <div>ТОРГИ ОНЛАЙН</div>
-            <div>ГОТОВЫЕ ПРЕДЛОЖЕНИЯ</div>
+    return <section className={styles.trade}>
+        <h2 className={styles.header_trade}>Онлайн табло торгов и готовых предложений</h2>
+        <div className={styles.trade_category}>
+            <div className={styles.category_trades}>ТОРГИ ОНЛАЙН</div>
+            <div className={styles.category_offers}>ГОТОВЫЕ ПРЕДЛОЖЕНИЯ</div>
         </div>
         <div>
             <nav>

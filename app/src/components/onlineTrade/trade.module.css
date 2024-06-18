@@ -1,0 +1,51 @@
+.trade {
+    max-width: 1440px;
+    margin-top: 166px;
+}
+
+.header_trade {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    margin-bottom: 70px;
+}
+
+.trade_category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.category_trades {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 81, 147);
+    border-radius: 5px 0px 0px 5px;
+    background-color: #005193;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: white;
+    width: 323px;
+    padding-right: 71px;
+    padding-left: 81px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.category_offers {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 81, 147);
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #858181;
+    width: 323px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

@@ -49,6 +49,10 @@
     border: 2px solid rgb(178, 10, 33);
 }
 
+.service_line_mb {
+    margin-bottom: 166px;
+}
+
 .components_container {
     display: flex;
     flex-direction: column;
