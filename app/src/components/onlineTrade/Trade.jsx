@@ -26,14 +26,14 @@ export default function Trade() {
                     <p className={styles.table_td}>СТАТУС</p>
                 </div>
                 <div className={styles.table_names}>
-                    <p className={styles.table_td}>№</p>
-                    <p className={styles.table_td}>ОБЕСПЕЧЕНИЕ</p>
-                    <p className={styles.table_td}>СУММА/СРОК</p>
-                    <p className={styles.table_td}>ЗАЁМЩИК</p>
-                    <p className={styles.table_td}>УЧАСТНИКИ</p>
-                    <p className={styles.table_td}>ПРОЦЕНТ</p>
-                    <p className={styles.table_td}>НАС.ПУНКТ</p>
-                    <p className={styles.table_td}>СТАТУС</p>
+                    <p className={styles.table_td}>211</p>
+                    <p className={styles.table_td}>Займ</p>
+                    <p className={styles.table_td}>96,000 ₽</p>
+                    <p className={styles.table_td}>Физ.лица</p>
+                    <p className={styles.table_td}>ломбард кредитный брокер</p>
+                    <p className={styles.table_td}>8% годовых</p>
+                    <p className={styles.table_td}>Санкт-Петербург</p>
+                    <p className={styles.table_td}>Завершены</p>
                 </div>
             </div>
             <div>
