@@ -50,8 +50,8 @@ export default function Trade() {
                     <img src={item.imgRating}  alt="stars" />
                 </div>
                 <div>
-                <p className={styles.table_td}>ломбард</p>
-                <p className={styles.table_td}>кредитный брокер</p>
+                    <p className={styles.table_td}>ломбард</p>
+                    <p className={styles.table_td}>кредитный брокер</p>
                 </div>
                 <p className={styles.table_td}>8% годовых</p>
                 <p className={styles.table_td}>{item.city}</p>
