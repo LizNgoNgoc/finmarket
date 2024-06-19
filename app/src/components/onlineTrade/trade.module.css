@@ -97,5 +97,9 @@
     padding-left: 17px;
     padding-right: 222px;
     display: flex;
-    gap: 70px;
+    gap: 60px;
+}
+
+.provision {
+    display: flex;
 }
