@@ -61,7 +61,9 @@ export default function Trade() {
                 <div></div>
             </div>
             {trade.map((item, index) => {
-                return <div className={styles.table_names}>
+                return <div>
+                    <hr className={styles.line}/>
+                        <div className={styles.table_names}>
                 <p className={styles.table_td}>211</p>
             <div>
                 <p className={styles.table_td}>Займ</p>
@@ -89,6 +91,7 @@ export default function Trade() {
                 <p className={styles.table_td}>Санкт-Петербург</p>
                 <p className={styles.table_td}>Завершены</p>
             </div>
+                    </div>
             })}
         <div></div>
     </section>
