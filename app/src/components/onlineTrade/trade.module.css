@@ -100,6 +100,22 @@
     gap: 60px;
 }
 
-.provision {
+.container_category {
     display: flex;
+}
+
+.table_btn {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 81, 147);
+    border-radius: 5px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.line_category {
+    border: 1px solid rgb(0, 81, 147);
+    width: 100%;
 }

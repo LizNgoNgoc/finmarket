@@ -62,7 +62,7 @@ export default function Trade() {
             </div>
             {trade.map((item, index) => {
                 return <div>
-                    <hr className={styles.line}/>
+                    <hr className={styles.line_category}/>
                         <div className={styles.table_names}>
                 <p className={styles.table_td}>211</p>
             <div>
@@ -74,7 +74,7 @@ export default function Trade() {
             </div>
                 <div>
                     <p className={styles.table_td}>96,000 ₽</p>
-                <div className={styles.provision}>
+                <div className={styles.container_category}>
                     <img src="./images/offers/Time.png"  alt="time" />
                     <p className={styles.table_td}>18 мес</p>
                 </div>
@@ -90,8 +90,10 @@ export default function Trade() {
                 <p className={styles.table_td}>8% годовых</p>
                 <p className={styles.table_td}>Санкт-Петербург</p>
                 <p className={styles.table_td}>Завершены</p>
+                <button className={styles.table_btn}>РАЗВЕРНУТЬ</button>
             </div>
-                    </div>
+            <hr className={styles.line_category} />
+            </div>
             })}
         <div></div>
     </section>
