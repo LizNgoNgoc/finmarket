@@ -26,40 +26,6 @@ export default function Trade() {
                     <p className={styles.table_td}>НАС.ПУНКТ</p>
                     <p className={styles.table_td}>СТАТУС</p>
                 </div>
-                <div className={styles.table_names}>
-                    <p className={styles.table_td}>211</p>
-                <div>
-                    <p className={styles.table_td}>Займ</p>
-                    <div className={styles.provision}>
-                        <img src="./images/offers/Diamond.png" alt="category" />
-                        <p className={styles.table_td}>Автотранспорт</p>
-                    </div>
-                </div>
-                    <div>
-                        <p className={styles.table_td}>96,000 ₽</p>
-                    <div className={styles.provision}>
-                        <img src="./images/offers/Time.png"  alt="time" />
-                        <p className={styles.table_td}>18 мес</p>
-                    </div>
-                    </div>
-                    <div>
-                        <p className={styles.table_td}>Физ.лица</p>
-                        <img src="./images/offers/stars.png"  alt="stars" />
-                    </div>
-                    <div>
-                    <p className={styles.table_td}>ломбард</p>
-                    <p className={styles.table_td}>кредитный брокер</p>
-                    </div>
-                    <p className={styles.table_td}>8% годовых</p>
-                    <p className={styles.table_td}>Санкт-Петербург</p>
-                    <p className={styles.table_td}>Завершены</p>
-                </div>
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
             {trade.map((item, index) => {
                 return <div>
                     <hr className={styles.line_category}/>
@@ -68,33 +34,34 @@ export default function Trade() {
             <div>
                 <p className={styles.table_td}>Займ</p>
                 <div className={styles.provision}>
-                    <img src="./images/offers/Diamond.png" alt="category" />
-                    <p className={styles.table_td}>Автотранспорт</p>
+                    <img src={item.imgCat} alt="category" />
+                    <p className={styles.table_td}>{item.nameCat}</p>
                 </div>
             </div>
                 <div>
-                    <p className={styles.table_td}>96,000 ₽</p>
+                    <p className={styles.table_td}>{item.price}</p>
                 <div className={styles.container_category}>
                     <img src="./images/offers/Time.png"  alt="time" />
-                    <p className={styles.table_td}>18 мес</p>
+                    <p className={styles.table_td}>{item.month} мес</p>
                 </div>
                 </div>
                 <div>
-                    <p className={styles.table_td}>Физ.лица</p>
-                    <img src="./images/offers/stars.png"  alt="stars" />
+                    <p className={styles.table_td}>{item.borrow}</p>
+                    <img src={item.imgRating}  alt="stars" />
                 </div>
                 <div>
                 <p className={styles.table_td}>ломбард</p>
                 <p className={styles.table_td}>кредитный брокер</p>
                 </div>
                 <p className={styles.table_td}>8% годовых</p>
-                <p className={styles.table_td}>Санкт-Петербург</p>
-                <p className={styles.table_td}>Завершены</p>
+                <p className={styles.table_td}>{item.city}</p>
+                <p className={styles.table_td}>{item.status}</p>
                 <button className={styles.table_btn}>РАЗВЕРНУТЬ</button>
             </div>
             <hr className={styles.line_category} />
             </div>
             })}
+            </div>
         <div></div>
     </section>
 }
