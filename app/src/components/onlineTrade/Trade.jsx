@@ -58,9 +58,9 @@ export default function Trade() {
                 <p className={styles.table_td}>{item.status}</p>
                 <button className={styles.table_btn}>РАЗВЕРНУТЬ</button>
             </div>
-            <hr className={styles.line_category} />
             </div>
             })}
+            <hr className={styles.line_category} />
             </div>
         <div></div>
     </section>
