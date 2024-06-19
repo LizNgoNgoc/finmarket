@@ -14,7 +14,7 @@ export default function FinServiceRules() {
                         <div className={styles.num_container}>1</div>
                         <p className={styles.num_step}>шаг</p>
                     </div>
-                    <div className={styles.text_container}>
+                    <div className={`${styles.text_container} ${styles.first_container}`}>
                         <h3 className={styles.header_text}>Регистрация</h3>
                         <p className={styles.paragraph_text}>Выберите роль: - получатель услуги - поставщик услугил</p>
                     </div>

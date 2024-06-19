@@ -100,7 +100,7 @@
     align-items: center;
 }
 
-.text_container:nth-child(1) {
+.text_container:first-child {
     padding-left: 78px;
     padding-right: 78px;
 }
