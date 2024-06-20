@@ -118,7 +118,28 @@
     color: #1E222E;
 }
 
+.img_time {
+    width: 12px;
+    height: 12px;
+}
+
 .line_category {
     border: 1px solid rgb(0, 81, 147);
     width: 100%;
+    margin-bottom: 29px;
+}
+
+.archive_btn {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 81, 147);
+    border-radius: 5px;
+    background: rgb(0, 81, 147);
+    width: 182px;
+    height: 47px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: white;
+    margin: 0 auto;
 }

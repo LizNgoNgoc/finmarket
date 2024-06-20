@@ -41,7 +41,7 @@ export default function Trade() {
                 <div>
                     <p className={styles.table_td}>{item.price}</p>
                 <div className={styles.container_category}>
-                    <img src="./images/offers/Time.png"  alt="time" />
+                    <img src="./images/offers/Time.png"  className={styles.img_time} alt="time" />
                     <p className={styles.table_td}>{item.month} мес</p>
                 </div>
                 </div>
@@ -61,6 +61,7 @@ export default function Trade() {
             </div>
             })}
             <hr className={styles.line_category} />
+            <button className={styles.archive_btn}>АРХИВ ТОРГОВ</button>
             </div>
         <div></div>
     </section>
