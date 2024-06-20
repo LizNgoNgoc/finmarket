@@ -1,15 +1,18 @@
 .section_finmarket {
-    height: 509px;
     display: flex;
     max-width: 1440px;
 }
 
 .section_fin {
-    background-color: #005193;
-    height: 509px;
     display: flex;
     width: 100%;
     flex-direction: column;
+}
+
+.fin_content {
+    background-color: #005193;
+    display: flex;
+    margin-bottom: 130px;
 }
 
 .fin_container {
@@ -20,8 +23,8 @@
 
 .scobe_up {
     position: absolute;
-    top: 210px;
-    left: 35px;
+    top: 200px;
+    left: 185px;
 }
 
 .fin_pro {
@@ -31,12 +34,20 @@
 .scobe_down {
     position: absolute;
     right: 0;
-    left: 640px;
-    top: 385px;
+    left: 660px;
+    top: 360px;
 }
 
 .text_fin {
     margin-top: 52px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: start;
+}
+
+.text_fin_sec {
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
@@ -60,5 +71,4 @@
 
 .container_info {
     display: flex;
-    margin-bottom: 130px;
 }

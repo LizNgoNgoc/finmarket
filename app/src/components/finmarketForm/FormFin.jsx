@@ -17,7 +17,7 @@ export default function FormFin() {
             <input type="password" placeholder='Пароль' className={styles.form_inp}/>
             <input type="password" placeholder='Повторите пароль' className={styles.form_inp}/>
         <div className={styles.form_confident}>
-            <input type="checkbox" />
+            <input type="checkbox" className={styles.form_checkbox}/>
             <p className={styles.text_confident}>Я согласен на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</p>
         </div>
         <button className={styles.form_btn}>УЧАСТВОВАТЬ</button>
