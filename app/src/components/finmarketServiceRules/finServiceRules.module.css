@@ -81,7 +81,7 @@
     font-family: Inter;
     font-size: 20px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 17px;
     margin-top: 22px;
 }
 
@@ -97,34 +97,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    letter-spacing: 0.8px;
+
 }
 
 .first_container {
-    padding-left: 78px;
-    padding-right: 78px;
+    padding-left: 65px;
+    padding-right: 65px;
     padding-top: 40px;
     padding-bottom: 38px;
 }
 
 .second_container {
     padding-top: 45px;
-    padding-left: 60.5px;
-    padding-right: 60.5px;
+    padding-left: 45px;
+    padding-right: 45px;
     padding-bottom: 44px;
 }
 
 .third_container {
     padding-top: 42px;
-    padding-left: 37px;
-    padding-right: 35px;
+    padding-left: 19px;
+    padding-right: 19px;
     padding-bottom: 32px;
 }
 
 .forth_container {
-    padding-top: 44px;
+    padding-top: 56px;
     padding-left: 22px;
     padding-right: 22px;
-    padding-bottom: 39px;
+    padding-bottom: 62px;
 }
 
 .header_text {
@@ -132,6 +135,7 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
+    margin-bottom: 10px;
 }
 
 .paragraph_text {
@@ -139,5 +143,9 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
+}
+
+.paragraph_text_mb {
+    margin-bottom: 7px;
 }
 

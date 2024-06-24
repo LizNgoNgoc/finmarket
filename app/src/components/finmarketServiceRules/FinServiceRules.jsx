@@ -38,7 +38,7 @@ export default function FinServiceRules() {
                     </div>
                     <div className={`${styles.text_container} ${styles.third_container}`}>
                         <h3 className={styles.header_text}>Отправьте лот на торги и участвуйто в аукционе</h3>
-                        <p className={styles.paragraph_text}>или</p>
+                        <p className={`${styles.paragraph_text} ${styles.paragraph_text_mb}`}>или</p>
                         <h3 className={styles.header_text}>Создайте готовое предложение и получайте отклики</h3>
                     </div>
                 </div>
