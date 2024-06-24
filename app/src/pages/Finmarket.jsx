@@ -3,6 +3,7 @@ import styles from './finmarket.module.css'
 import FinServiceRules from "../components/finmarketServiceRules/FinServiceRules";
 import Trade from "../components/onlineTrade/Trade";
 import Services from "../components/ourServices/Services";
+import Advantages from "../components/advantages/Advantages";
 
 
 export default function Finmarket() {
@@ -25,6 +26,7 @@ export default function Finmarket() {
                 <hr className={styles.service_line}/>
                 <Trade/>
                 <Services/>
+                <Advantages/>
         </div>
     </section>
 }
