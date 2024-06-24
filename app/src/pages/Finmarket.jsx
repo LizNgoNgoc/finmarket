@@ -2,6 +2,7 @@ import FormFin from "../components/finmarketForm/FormFin"
 import styles from './finmarket.module.css'
 import FinServiceRules from "../components/finmarketServiceRules/FinServiceRules";
 import Trade from "../components/onlineTrade/Trade";
+import Services from "../components/ourServices/Services";
 
 
 export default function Finmarket() {
@@ -23,6 +24,7 @@ export default function Finmarket() {
                 <FinServiceRules/>
                 <hr className={styles.service_line}/>
                 <Trade/>
+                <Services/>
         </div>
     </section>
 }
