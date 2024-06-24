@@ -20,5 +20,9 @@
 }
 
 .adv_container {
+    display: flex;
+}
+
+.advantages_category {
 
 }
