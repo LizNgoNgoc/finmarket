@@ -8,11 +8,13 @@
     font-weight: 600;
     line-height: 58px;
     margin: 0 auto;
+    margin-bottom: 69px;
 }
 
 .services_container {
     display: flex;
     gap: 21px;
+    justify-content: center;
 }
 
 .service_content {
@@ -35,8 +37,32 @@
     margin-bottom: 39px;
 }
 
-.img_servcont {
+.img_own {
     margin-bottom: 14px;
+    width: 149px;
+    height: 89px;
+    margin: auto;
+}
+
+.img_ref {
+    margin-bottom: 14px;
+    width: 136px;
+    height: 115px;
+    margin: auto;
+}
+
+.img_crash {
+    margin-bottom: 14px;
+    width: 99px;
+    height: 120px;
+    margin: auto;
+}
+
+.img_debt {
+    margin-bottom: 14px;
+    width: 137px;
+    height: 130px;
+    margin: auto;
 }
 
 .btn_servcont {
