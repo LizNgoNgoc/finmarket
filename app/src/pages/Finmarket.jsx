@@ -4,7 +4,7 @@ import FinServiceRules from "../components/finmarketServiceRules/FinServiceRules
 import Trade from "../components/onlineTrade/Trade";
 import Services from "../components/ourServices/Services";
 import Advantages from "../components/advantages/Advantages";
-
+import Territory from "../components/territory/Territory";
 
 export default function Finmarket() {
     return <section className={styles.section_finmarket}> 
@@ -27,6 +27,7 @@ export default function Finmarket() {
                 <Trade/>
                 <Services/>
                 <Advantages/>
+                <Territory/>
         </div>
     </section>
 }

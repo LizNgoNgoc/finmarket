@@ -25,6 +25,5 @@ export default function Services() {
                 <button className={styles.btn_servcont}>ПОДРОБНЕЕ</button>
             </div>
         </div>
-            
     </section>
 }
