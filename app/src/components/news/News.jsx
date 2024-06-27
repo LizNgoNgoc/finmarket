@@ -6,7 +6,7 @@ export default function News() {
         <h2 className={styles.header_news}>Лента новостей</h2>
         <div className={styles.news_container}>
             {Blog.map((item, index) => {
-                return <div className={styles.blog_container}>
+                return <div key={index} className={styles.blog_container}>
                     <img src={item.img} className={styles.img_news} alt="img" />
                     <h3 className={styles.title_news}>{item.title}</h3>
                     <p className={styles.data_news}>{item.data}</p>
