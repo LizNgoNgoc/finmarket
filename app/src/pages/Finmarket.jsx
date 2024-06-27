@@ -5,6 +5,7 @@ import Trade from "../components/onlineTrade/Trade";
 import Services from "../components/ourServices/Services";
 import Advantages from "../components/advantages/Advantages";
 import Territory from "../components/territory/Territory";
+import News from "../components/news/News";
 
 export default function Finmarket() {
     return <section className={styles.section_finmarket}> 
@@ -28,6 +29,7 @@ export default function Finmarket() {
                 <Services/>
                 <Advantages/>
                 <Territory/>
+                <News/>
         </div>
     </section>
 }
