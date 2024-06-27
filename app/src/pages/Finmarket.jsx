@@ -7,6 +7,7 @@ import Advantages from "../components/advantages/Advantages";
 import Territory from "../components/territory/Territory";
 import News from "../components/news/News";
 
+
 export default function Finmarket() {
     return <section className={styles.section_finmarket}> 
         <div className={styles.section_fin}>

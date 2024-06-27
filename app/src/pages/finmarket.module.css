@@ -25,8 +25,8 @@
 
 .scobe_up {
     position: absolute;
-    top: 200px;
-    left: 185px;
+    top: 70px;
+    left: 70px;
 }
 
 .fin_pro {
@@ -36,8 +36,8 @@
 .scobe_down {
     position: absolute;
     right: 0;
-    left: 660px;
-    top: 360px;
+    left: 560px;
+    top: 245px;
 }
 
 .text_fin {
