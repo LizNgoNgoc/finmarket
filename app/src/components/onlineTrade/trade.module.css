@@ -95,7 +95,6 @@
     padding-top: 31px;
     padding-bottom: 33px;
     padding-left: 17px;
-    padding-right: 222px;
     display: flex;
     gap: 60px;
 }
@@ -116,6 +115,11 @@
     padding-left: 30px;
     padding-right: 30px;
     color: #1E222E;
+}
+
+.provision {
+    display: flex;
+    gap: 1px;
 }
 
 .img_time {
