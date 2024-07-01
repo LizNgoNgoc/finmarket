@@ -1,7 +1,7 @@
 import styles from './trade.module.css'
 import { Link } from 'react-router-dom'
 import { trade } from './TradeObjects'
-
+import Completed from './Completed'
 
 export default function Trade() {
    
@@ -71,6 +71,6 @@ export default function Trade() {
             <hr className={styles.line_category} />
             <button className={styles.archive_btn}>АРХИВ ТОРГОВ</button>
             </div>
-        <div></div>
+        <Completed/>
     </section>
 }
