@@ -7,6 +7,8 @@ export default function Completed({item}) {
                 return   <div key={index} className={index % 2 === 1 ? styles.bigger_container : styles.less_container}>
                     <h3 className={styles.header_first}>{item.title}</h3>
                     <p className={styles.paragraph_container}>{item.paragraph}</p>
+                    <p className={styles.percent}>{item.percent}</p>
+                    <p className={styles.win}>{item.winner}</p>
                  </div>
                 })
             }

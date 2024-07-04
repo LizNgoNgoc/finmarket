@@ -39,7 +39,7 @@ export default function TradeBlock({item}) {
             <p className={styles.table_td}>8% годовых</p>
             <p className={styles.table_td}>{item.city}</p>
             <p className={styles.table_td}>{item.status}</p>
-            <button className={styles.table_btn} onClick={() => setView(!view)}>РАЗВЕРНУТЬ</button>
+            <button className={styles.table_btn} onClick={() => setView(!view)}>{view ? 'СВЕРНУТЬ' : 'РАЗВЕРНУТЬ'}</button>
             </div>
             <Completed item={item}/>
         </div>
