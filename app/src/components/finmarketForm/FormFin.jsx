@@ -1,7 +1,21 @@
+import { useEffect, useState } from 'react'
 import styles from './formFin.module.css'
 import { Link } from 'react-router-dom'
 
 export default function FormFin() {
+    const[formElements, setFormElements] = useState({select : "Получить займ" })
+    const [formErrors, setFormErrors] = useState({})
+
+    useEffect(() => {
+        formElements.phone 
+
+    }, [formElements])
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        console.log(formElements);
+    }
+
     return <div className={styles.form_container}>
         <nav className={styles.nav_form}>
             <Link className={styles.link_nav}>ЗАЙМ</Link>
@@ -10,14 +24,21 @@ export default function FormFin() {
             <Link className={styles.link_nav}>ВОЗВРАТ ДОЛГОВ</Link>
         </nav>
         <hr className={styles.form_line}/>
-        <form action="" className={styles.form}>
-            <input type="text" placeholder='Получить займ' className={styles.form_inp}/>
-            <input type="phone" placeholder='Телефон' className={styles.form_inp}/>
-            <input type="email" placeholder='Email' className={styles.form_inp}/>
-            <input type="password" placeholder='Пароль' className={styles.form_inp}/>
-            <input type="password" placeholder='Повторите пароль' className={styles.form_inp}/>
+        <form onSubmit={handleSubmit} className={styles.form}>
+            <select  onChange={(e) => setFormElements({...formElements, [e.target.name]: e.target.value})} name='select' className={styles.form_inp}>
+                <option value="Получить займ" className={styles.option}>Получить займ</option>
+                <option value="Рефинансирование займа" className={styles.option}>Рефинансирование займа</option>
+                <option value="Банкротство" className={styles.option}>Банкротство</option>
+                <option value="Возврат долгов" className={styles.option}>Возврат долгов</option>
+            </select>
+            <input type="phone" name="phone" placeholder='Телефон' onInput={(e) => setFormElements({...formElements, [e.target.name]: e.target.value})} className={styles.form_inp}/>
+            <p className={styles.error} >{formErrors.phone}</p>
+            <input type="email" name="email" placeholder='Email'  onInput={(e) => setFormElements({...formElements, [e.target.name]: e.target.value})} className={styles.form_inp}/>
+            <p className={styles.error}>{formErrors.email}</p>
+            <input type="password" name="password"  onInput={(e) => setFormElements({...formElements, [e.target.name]: e.target.value})} placeholder='Пароль' className={styles.form_inp}/>
+            <p className={styles.error}>{formErrors.password}</p>
         <div className={styles.form_confident}>
-            <input type="checkbox" className={styles.form_checkbox}/>
+            <input type="checkbox" name='remember'  onChange={(e) => setFormElements({...formElements, [e.target.name]: e.target.checked})} className={styles.form_checkbox}/>
             <p className={styles.text_confident}>Я согласен на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</p>
         </div>
         <button className={styles.form_btn}>УЧАСТВОВАТЬ</button>

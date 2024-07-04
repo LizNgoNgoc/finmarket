@@ -146,11 +146,10 @@
     font-weight: 500;
     line-height: 17px;
     text-transform: uppercase;
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
     color: #1E222E;
+    width: 140px;
 }
 
 .provision {
