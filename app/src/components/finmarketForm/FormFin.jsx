@@ -7,7 +7,13 @@ export default function FormFin() {
     const [formErrors, setFormErrors] = useState({})
 
     useEffect(() => {
-        formElements.phone 
+        formElements.phone = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+        formElements.email = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+        formElements.password = /(?=.*[0-9])(?=.*[a-z])[0-9a-zA-Z]{6,}/g;
+
+        formErrors.phone = 'error'
+        formErrors.email = 'error'
+        formErrors.password = 'error'
 
     }, [formElements])
 
