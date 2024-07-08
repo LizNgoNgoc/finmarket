@@ -14,6 +14,10 @@ export default function FormFin() {
         formElements.phone = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
         formElements.email = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
         formElements.password = /(?=.*[0-9])(?=.*[a-z])[0-9a-zA-Z]{6,}/g;
+
+        formErrors.phone = 'error';
+        formErrors.email = 'error';
+        formErrors.password = 'error';
     }, [formElements])
 
     function handleChange(e) {
@@ -24,6 +28,8 @@ export default function FormFin() {
     //     const valid = !formErrors(e)
     //     setFormErrors({...formErrors, [e.target.name] : valid})
     // }
+
+    //onInput={(e) => handleError(e, formErrors.phone)}
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -45,8 +51,8 @@ export default function FormFin() {
                 <option value="Банкротство" className={styles.option}>Банкротство</option>
                 <option value="Возврат долгов" className={styles.option}>Возврат долгов</option>
             </select>
-            <input type="phone" name="phone" placeholder='Телефон' onChange={handleChange} onInput={(e) => handleError(e, formErrors.phone)} className={styles.form_inp}/>
-            <p className={`${styles.error} ${formErrors.phone ? styles.show : ''}`}>{formErrors.phone}</p>
+            <input type="phone" name="phone" placeholder='Телефон' onInput={handleChange} className={styles.form_inp}/>
+            <p className={`${styles.error} ${formElements.phone ? styles.show : ''}`}>{formErrors.phone}</p>
             <input type="email" name="email" placeholder='Email' onInput={(e) => setFormElements({...formElements, [e.target.name]: e.target.value})} className={styles.form_inp}/>
             <p className={styles.error}>{formErrors.email}</p>
             <input type="password" name="password"  onInput={(e) => setFormElements({...formElements, [e.target.name]: e.target.value})} placeholder='Пароль' className={styles.form_inp}/>
