@@ -89,7 +89,7 @@
     font-weight: 500;
     line-height: 17px;
     color: red;
-    display: none;
+    /* display: none; */
 }
 
 .show {
