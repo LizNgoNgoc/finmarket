@@ -1,50 +1,19 @@
-import { useEffect, useRef, useState } from 'react'
+import {  useState } from 'react'
 import styles from './formFin.module.css'
 import { Link } from 'react-router-dom'
-import validationForm from '../../common/validationForm'
+import {useValidationForm, validationFin} from '../../common/validationForm'
 
 
 export default function FormFin() {
-    const check = useRef(null)
-    const [formElements, setFormElements] = useState({phone: '', email: '', password: '', select: ''})
-    const [btnDisabled, setBtnDisabled] = useState(true)
-    const [formErrors, setFormErrors] = useState({
-        select: {
-            pattern: /^$|\s+/,
-            message: 'Поле обязательно к заполнению',
-        },
-        phone: {
-            pattern: /^[0-9]{11}$/,
-            message: 'Номер телефона должен быть в формате 8XXXXXXXXXX',
-            validity: true
-        },
-        email: {
-            pattern:  /^[\w+]+@[\w+]+\.[\w]{2,}$/,
-            message: 'Email должен быть в формате ******@***.***',
-            validity: true
-        },
-        password: {
-            pattern: /^[а-яА-ЯёЁa-zA-Z0-9]{6,}$/,
-            message: 'Пароль должен быть больше 6 символов и сожедержать кирилицу, цифры и спецсимвол',
-            validity: true
-        },
-    })
-
-    useEffect(() => {
-        validationForm(formElements, formErrors, setFormErrors)
-        setBtnDisabled(!Object.keys(formErrors).every(key=> formErrors[key].validity) && check.current.checked)
-        console.log(btnDisabled);
-    }, [formElements, check])
-
-    function handleChange(e) {
-        setFormElements({...formElements, [e.target.name]: e.target.value})
-    }
+    const [check, setCheck] = useState(false)
+    const form = {phone: '', email: '', password: '', select: ''}
+    const [ formElements, handleChange, formErrors, btnDisabled ] = useValidationForm(form, validationFin)
 
     function handleSubmit(e) {
         e.preventDefault()
         console.log(formElements);
     }
-
+    
     return <div className={styles.form_container}>
         <nav className={styles.nav_form}>
             <Link className={styles.link_nav}>ЗАЙМ</Link>
@@ -69,10 +38,10 @@ export default function FormFin() {
             <input type="password" name="password" onInput={handleChange} placeholder='Пароль' className={styles.form_inp}/>
             <p className={styles.error} >{formErrors.password.validity ? '' : formErrors.password.message}</p>
             <div className={styles.form_confident}>
-                <input type="checkbox" ref={check} name='remember' className={styles.form_checkbox}/>
+                <input type="checkbox" checked={check} onChange={(e) => setCheck(e.target.checked)} name='remember' className={styles.form_checkbox}/>
                 <p className={styles.text_confident}>Я согласен на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</p>
             </div>
-            <button className={styles.form_btn} disabled={btnDisabled}>УЧАСТВОВАТЬ</button>
+            <button className={styles.form_btn} disabled={!(btnDisabled && check)}>УЧАСТВОВАТЬ</button>
         </form>
     </div>
 }
