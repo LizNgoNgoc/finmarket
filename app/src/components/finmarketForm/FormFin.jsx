@@ -16,7 +16,7 @@ export default function FormFin() {
     
     return <div className={styles.form_container}>
         <nav className={styles.nav_form}>
-            <Link className={styles.link_nav}>ЗАЙМ</Link>
+            <Link to='/borrow' className={styles.link_nav}>ЗАЙМ</Link>
             <Link className={styles.link_nav}>РЕФИНАНСИРОВАНИЕ</Link>
             <Link className={styles.link_nav}>БАНКРОТСТВО</Link>
             <Link className={styles.link_nav}>ВОЗВРАТ ДОЛГОВ</Link>
