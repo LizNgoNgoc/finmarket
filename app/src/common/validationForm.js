@@ -1,24 +1,24 @@
 import { useState, useEffect } from "react"
 
-export function useValidationForm(inputs = {}, inputsValidation = {}) {
+export function useValidationForm(inputs = {}, inputsValidation = {}) { //в качестве аргументов передаем объект с инпутами 
  
-    const [formElements, setFormElements] = useState(inputs)
-    const [formErrors, setFormErrors] = useState(inputsValidation)
-    const [btnDisabled, setBtnDisabled] = useState(true)
+    const [formElements, setFormElements] = useState(inputs) //передаем состояние инпутов
+    const [formErrors, setFormErrors] = useState(inputsValidation) //передаем состояние, применяющее валидацию
+    const [btnDisabled, setBtnDisabled] = useState(true) //передаем состояние блокировки кнопки
 
     useEffect(() => {
-        const arrKeys = Object.keys(formElements)
-        arrKeys.forEach(key => {
-            if (!formErrors[key].pattern?.test(formElements[key]) || formElements[key] === '') {
-                setFormErrors((prev) => ({...prev, [key] : {...prev[key], validity: false}}))
+        const arrKeys = Object.keys(formElements) //обращаемся к объектам по ключам
+        arrKeys.forEach(key => { //перебираем массив объектов по ключам
+            if (!formErrors[key].pattern?.test(formElements[key]) || formElements[key] === '') { //проверяем начальное состояние ключа, если оно имеет значение паттерна валидации, либо пустоту
+                setFormErrors((prev) => ({...prev, [key] : {...prev[key], validity: false}})) //возвращаем ошибку
             } else {
-                setFormErrors((prev) => ({...prev, [key] : {...prev[key], validity: true}}))
+                setFormErrors((prev) => ({...prev, [key] : {...prev[key], validity: true}})) //иначе успешно проходим валидацию
             }
         })
-        setBtnDisabled((Object.keys(formErrors).every(key=> formErrors[key].validity)) )
+        setBtnDisabled((Object.keys(formErrors).every(key=> formErrors[key].validity)) ) //кнопка блокируется если  хотя бы один инпут не прошел валидацию
     }, [formElements])
 
-    function handleChange(e) {
+    function handleChange(e) { //функция изменения значений инпутов
          setFormElements({...formElements, [e.target.name]: e.target.value})
     }
 
@@ -32,7 +32,7 @@ export function useValidationForm(inputs = {}, inputsValidation = {}) {
 }
 
 
-export const validationFin = {
+export const validationFin = { //паттерны валидации
     select: {
         pattern: /^$|\s+/,
         message: 'Поле обязательно к заполнению',
