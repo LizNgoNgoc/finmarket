@@ -1,0 +1,38 @@
+.attention {
+    max-width: 1440px;
+    padding: 0 90px;
+    margin-top: 109px;
+    margin-bottom: 134px;
+}
+
+.header_attention {
+    color: #1E222E;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    margin: auto;
+}
+
+.container_info {
+    display: flex;
+    gap: 16px;
+}
+
+.img_attention {
+    width: 303px;
+    height: 242px;
+}
+
+.text_container {
+    color: #1E222E;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text_attention {
+
+}
+
