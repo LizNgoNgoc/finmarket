@@ -11,7 +11,7 @@
     font-size: 36px;
     font-weight: 600;
     line-height: 44px;
-    margin: auto;
+    margin-bottom: 40px;
 }
 
 .container_info {
@@ -25,14 +25,16 @@
 }
 
 .text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.text_attention {
     color: #1E222E;
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-}
-
-.text_attention {
-
 }
 
