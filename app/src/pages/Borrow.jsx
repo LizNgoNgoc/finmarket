@@ -23,16 +23,16 @@ export default function Borrow() {
         </div>
         <div className={styles.rules_info}>
             <div className={styles.rules_cont}>
-                <h3></h3>
-                <p></p>
-                <p></p>
-                <p></p>
+                <h3 className={styles.header_rules}>Общие требования к заемщику:</h3>
+                <p className={styles.text_rules}>Наличие паспорта.</p>
+                <p className={styles.text_rules}>Возраст не менее 18 лет.</p>
+                <p className={styles.text_rules}>В некоторых случаях кредитор имеет право расширить список документов, предоставляемых заемщиком.</p>
             </div>
             <div className={styles.rules_cont}>
-                <h3></h3>
-                <p></p>
-                <p></p>
-                <p></p>
+                <h3 className={styles.header_rules}>Порядок получения займа:</h3>
+                <p className={styles.text_rules}>Предоставление кредитору от заёмщика данных или иной необходимой информации.</p>
+                <p className={styles.text_rules}>Заключение договора между сторонами.</p>
+                <p className={styles.text_rules}>Получение денег.</p>
             </div>
         </div>
     </section>
