@@ -17,6 +17,7 @@
 .container_info {
     display: flex;
     gap: 16px;
+    margin-bottom: 30px;
 }
 
 .img_attention {
@@ -35,6 +36,18 @@
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
+    line-height: 24px;
+}
+
+.text_special {
+    margin-bottom: 20px;
+}
+
+.bold {
+    color: #1E222E;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 24px;
 }
 
