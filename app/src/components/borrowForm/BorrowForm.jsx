@@ -36,8 +36,8 @@ export default function BorrowForm() {
             <div className={styles.confident_container}>
                     <input type="checkbox" />
                     <p className={styles.text_confident}>Нажимая на кнопку Далее, Вы соглашаетесь на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</p>
-                    <button className={styles.btn_confident}>Далее</button>
             </div>
+            <button className={styles.btn_confident}>Далее</button>
         </div>
     </section>
 }
