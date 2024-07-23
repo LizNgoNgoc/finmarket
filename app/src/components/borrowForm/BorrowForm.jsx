@@ -10,15 +10,28 @@ export default function BorrowForm() {
                 <div className={styles.nav_text}>ВОЗВРАТ ДОЛГОВ</div>
             </nav>
             <form action="" className={styles.form}>
-                <select type="text" className={styles.input}>
-                    <option value="">Получить кредит</option>
-                </select>
-                
-                <input type="phone" className={styles.input}/>
-                <input type="email" className={styles.input}/>
-                <input type="password" className={styles.input}/>
-                <input type="password" className={styles.input}/>
-                
+                <div className={styles.cont_info}>
+                    <label htmlFor="select" className={styles.label}>Получить услугу</label>
+                    <select type="text" id='select' className={styles.input}>
+                        <option value="">Получить кредит</option>
+                    </select>
+                </div>
+                <div className={styles.cont_info}>
+                    <label htmlFor="phone" className={styles.label}>Телефон</label>
+                    <input type="phone" id='phone' className={styles.input}/>
+                </div>
+                <div className={styles.cont_info}>
+                    <label htmlFor="email" className={styles.label}>Email</label>
+                    <input type="email" id='email' className={styles.input}/>
+                </div>
+                <div className={styles.cont_info}>
+                    <label htmlFor="password1" className={styles.label}>Пароль</label>
+                    <input type="password" id='password1' className={styles.input}/>
+                </div>
+                <div className={styles.cont_info}>
+                    <label htmlFor="password2" className={styles.label}>Повторите пароль</label>
+                    <input type="password" id='password2' className={styles.input}/>
+                </div>
             </form>
             <div className={styles.confident_container}>
                     <input type="checkbox" />
