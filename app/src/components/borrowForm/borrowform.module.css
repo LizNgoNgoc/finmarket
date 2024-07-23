@@ -1,6 +1,5 @@
 .borrow_form {
     max-width: 1440px;
-    padding: 0 90px;
     box-sizing: border-box;
 }
 
@@ -8,6 +7,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 19%;
 }
 
 .label {
@@ -39,7 +39,7 @@
     line-height: 24px;
     box-sizing: border-box;
     background: rgb(255, 255, 255);
-    padding: 36px 49px 36px 50px;
+    padding: 36px 87px 36px 69px;
 }
 
 .form {
@@ -51,7 +51,7 @@
 }
 
 .input {
-    max-width: 230px;
+    width: 100%;
     padding-top: 16px;
     padding-bottom: 17px;
     padding-right: 15px;
@@ -84,5 +84,11 @@
     background: rgb(249, 73, 107);  
     color: white;
     border: 0;
+}
+
+.container_policy {
+    display: flex;
+    align-items: flex-start;
+    gap: 82px;
 }
 

@@ -9,6 +9,7 @@
     font-weight: 600;
     line-height: 58px;
     margin-bottom: 70px;
+    text-align: center;
 }
 
 .trade_category {
@@ -48,6 +49,7 @@
     width: 323px;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 28px;
 }
 
 .nav {

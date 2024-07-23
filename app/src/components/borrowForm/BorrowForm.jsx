@@ -33,11 +33,13 @@ export default function BorrowForm() {
                     <input type="password" id='password2' className={styles.input}/>
                 </div>
             </form>
-            <div className={styles.confident_container}>
-                    <input type="checkbox" />
-                    <p className={styles.text_confident}>Нажимая на кнопку Далее, Вы соглашаетесь на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</p>
+            <div className={styles.container_policy}>
+                <div className={styles.confident_container}>
+                        <input type="checkbox" />
+                        <p className={styles.text_confident}>Нажимая на кнопку Далее, Вы соглашаетесь на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</p>
+                </div>
+                <button className={styles.btn_confident}>Далее</button>
             </div>
-            <button className={styles.btn_confident}>Далее</button>
         </div>
     </section>
 }

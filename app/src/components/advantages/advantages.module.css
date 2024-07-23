@@ -9,6 +9,7 @@
     line-height: 58px;
     margin: 0 auto;
     margin-bottom: 80px;
+    text-align: center;
 }
 
 .advantages_content {
@@ -46,4 +47,5 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
+    text-align: center;
 }

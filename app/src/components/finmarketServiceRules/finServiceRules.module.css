@@ -75,6 +75,7 @@
     font-weight: 600;
     line-height: 39px;
     padding: 5px;
+    text-align: center;
 }
 
 .num_step {
@@ -99,6 +100,7 @@
     align-items: center;
     justify-content: center;
     letter-spacing: 0.8px;
+    text-align: center;
 
 }
 
