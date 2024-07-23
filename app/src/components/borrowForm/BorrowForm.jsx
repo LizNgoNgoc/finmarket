@@ -18,7 +18,7 @@ export default function BorrowForm() {
                 </div>
                 <div className={styles.cont_info}>
                     <label htmlFor="phone" className={styles.label}>Телефон</label>
-                    <input type="phone" id='phone' className={styles.input}/>
+                    <input type="phone" id='phone' placeholder='+7' className={styles.input}/>
                 </div>
                 <div className={styles.cont_info}>
                     <label htmlFor="email" className={styles.label}>Email</label>
