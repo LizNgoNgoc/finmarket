@@ -25,17 +25,21 @@ export default function RefinanceInfo() {
         <div className={styles.rules_info}>
             <div className={styles.rules_cont}>
                 <h3 className={styles.header_rules}>Основные причины для рефинансирования:</h3>
-                <li className={styles.text_rules}>Уменьшение процентной ставки;</li>
-                <li className={styles.text_rules}>Продление сроков кредита;</li>
-                <li className={styles.text_rules}>Объединение нескольких кредитов для удобства оплаты;</li>
-                <li className={styles.text_rules}>Изменение валюты платежей;</li>
-                <li className={styles.text_rules}>Снятие залога с имущества.</li>
+                <div className={styles.li_container}>
+                    <li className={styles.text_rules}>Уменьшение процентной ставки;</li>
+                    <li className={styles.text_rules}>Продление сроков кредита;</li>
+                    <li className={styles.text_rules}>Объединение нескольких кредитов для удобства оплаты;</li>
+                    <li className={styles.text_rules}>Изменение валюты платежей;</li>
+                    <li className={styles.text_rules}>Снятие залога с имущества.</li>
+                </div>
             </div>
             <div className={styles.rules_cont}>
                 <h3 className={styles.header_rules}>Общие требования к заемщику для рефинансирования:</h3>
-                <li className={styles.text_rules}>Возраст от 21 до 65 лет;</li>
-                <li className={styles.text_rules}>Текущий стаж работы от полугода;</li>
-                <li className={styles.text_rules}>Постоянный источник дохода.</li>
+                <div className={styles.li_container}>
+                    <li className={styles.text_rules}>Возраст от 21 до 65 лет;</li>
+                    <li className={styles.text_rules}>Текущий стаж работы от полугода;</li>
+                    <li className={styles.text_rules}>Постоянный источник дохода.</li>
+                </div>
                 <p className={styles.paragraph}>Список предоставляемых документов каждая кредитная организация или частное лицо устанавливает 
                     индивидуально, но обычно в него входят: паспорт, справка о доходах, документы по рефинансируемому кредиту.</p>
             </div>
