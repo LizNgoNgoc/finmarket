@@ -5,6 +5,7 @@ import Finmarket from './pages/Finmarket';
 import Borrow from './pages/Borrow';
 import Footer from './components/Footer';
 import Refinance from './pages/Refinance';
+import Buncrutcy from './pages/Buncrutcy';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/'  element={<Finmarket />} />
         <Route path='/borrow'  element={<Borrow />} />
         <Route path='/refinance'  element={<Refinance/>} />
+        <Route path='/buncrutcy'  element={<Buncrutcy/>} />
       </Routes>
       <Footer/>
     </div>
