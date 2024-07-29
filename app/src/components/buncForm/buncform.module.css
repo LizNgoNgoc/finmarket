@@ -1,0 +1,93 @@
+.bunc_form {
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+.cont_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 19%;
+}
+
+.label {
+    color: #1E222E;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.container {
+    box-sizing: border-box;
+    border: 1px solid rgb(94, 129, 255);
+    border-radius:10px;
+    background: rgb(255, 255, 255);
+    padding-bottom: 35px;
+}
+
+.nav {
+    display: flex;
+    max-width: 1440px;
+}
+
+.nav_text {
+    color: #1E222E;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    padding: 36px 87px 36px 69px;
+}
+
+.form {
+    display: flex;
+    gap: 13px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgb(94, 129, 255);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding-left: 15px;
+}
+
+.confident_container {
+   display: flex;
+   gap: 1px;
+   padding-left: 26px;
+}
+
+.text_confident {
+    color: #1E222E;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    
+}
+
+.btn_confident {
+    width: 110px;
+    height: 47px;
+    border-radius: 6px;
+    background: rgb(249, 73, 107);  
+    color: white;
+    border: 0;
+}
+
+.container_policy {
+    display: flex;
+    align-items: flex-start;
+    gap: 82px;
+}

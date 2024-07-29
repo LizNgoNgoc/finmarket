@@ -6,6 +6,7 @@ import Borrow from './pages/Borrow';
 import Footer from './components/Footer';
 import Refinance from './pages/Refinance';
 import Buncrutcy from './pages/Buncrutcy';
+import Debts from './pages/Debts';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/borrow'  element={<Borrow />} />
         <Route path='/refinance'  element={<Refinance/>} />
         <Route path='/buncrutcy'  element={<Buncrutcy/>} />
+        <Route path='/debts'  element={<Debts/>} />
       </Routes>
       <Footer/>
     </div>
