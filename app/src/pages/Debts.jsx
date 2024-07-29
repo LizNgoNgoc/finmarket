@@ -1,7 +1,9 @@
 import styles from './borrow.module.css'
-import SchemeBunc from '../components/serviceScheme/Scheme'
-import PayAttention from '../components/attention/PayAttantion'
+import SchemeBunc from '../components/schemeBunc/SchemeBunc'
+import PayAttentionDebts from '../components/attention/PayAttantionDebts'
 import DebtsInfo from '../components/debtsInfo/DebtsInfo'
+import DebtsForm from '../components/formDebts/DebtsForm'
+
 
 export default function Debts() {
     return <section className={styles.borrow}>
@@ -9,6 +11,7 @@ export default function Debts() {
         <hr className={styles.line}/>
         <SchemeBunc/>
         <hr className={styles.line}/>
-        <PayAttention/>
+        <PayAttentionDebts/>
+        <DebtsForm/>
     </section>
 }

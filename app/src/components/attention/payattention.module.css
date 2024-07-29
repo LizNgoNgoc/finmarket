@@ -1,6 +1,5 @@
 .attention {
     max-width: 1440px;
-    padding: 0 90px;
     margin-top: 109px;
     margin-bottom: 134px;
 }
@@ -21,14 +20,14 @@
 }
 
 .img_attention {
-    width: 303px;
-    height: 242px;
+    width: 407px;
+    height: 325px;
 }
 
 .text_container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .text_attention {

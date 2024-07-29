@@ -3,7 +3,7 @@ import styles from './debtsinfo.module.css'
 export default function DebtsInfo() {
     return  <section className={styles.debts}>
     <div className={styles.links}>
-        <span className={styles.span_header}>Главная / Услуги / </span><span className={styles.span_page}>Банкротство</span>
+        <span className={styles.span_header}>Главная / Услуги / </span><span className={styles.span_page}>Возврат долгов</span>
     </div>
     <div className={styles.info_container}>
         <div className={styles.bunc_info}>
