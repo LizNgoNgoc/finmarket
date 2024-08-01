@@ -1,7 +1,7 @@
 import styles from './borrow.module.css'
 import BuncrutcyInfo from '../components/buncrutcyInfo/BuncrutcyInfo'
 import SchemeBunc from '../components/schemeBunc/SchemeBunc'
-import PayAttention from '../components/attention/PayAttantion'
+import PayAttentionBunc from '../components/attention/PayAttentionBuncr'
 import BuncForm from '../components/buncForm/BuncForm'
 
 export default function Buncrutcy() {
@@ -10,7 +10,7 @@ export default function Buncrutcy() {
         <hr className={styles.line}/>
         <SchemeBunc/>
         <hr className={styles.line}/>
-        <PayAttention/>
+        <PayAttentionBunc/>
         <BuncForm/>
     </section>
 }

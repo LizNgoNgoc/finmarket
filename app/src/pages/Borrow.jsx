@@ -1,7 +1,7 @@
 import styles from './borrow.module.css'
 import BorrowInfo from '../components/borrowInfo/BorrowInfo'
 import Scheme from '../components/serviceScheme/Scheme'
-import PayAttention from '../components/attention/PayAttantion'
+import PayAttentionBorrow from '../components/attention/PayAttentionBorrow'
 import BorrowForm from '../components/borrowForm/BorrowForm'
 
 export default function Borrow() {
@@ -10,7 +10,7 @@ export default function Borrow() {
         <hr className={styles.line}/>
         <Scheme/>
         <hr className={styles.line}/>
-        <PayAttention/>
+        <PayAttentionBorrow/>
         <BorrowForm/>
     </section>
 }

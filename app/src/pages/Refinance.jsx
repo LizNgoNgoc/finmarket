@@ -1,7 +1,7 @@
 import styles from './borrow.module.css'
 import RefinanceInfo from '../components/refinance/RefinanceInfo'
 import Scheme from '../components/serviceScheme/Scheme'
-import PayAttention from '../components/attention/PayAttantion'
+import PayAttentionRefinance from '../components/attention/PayAttentionRefinance'
 import RefinanceForm from '../components/refinanceForm/RefinanceForm'
 
 export  default function Refinance() {
@@ -10,7 +10,7 @@ export  default function Refinance() {
         <hr className={styles.line}/>
         <Scheme/>
         <hr className={styles.line}/>
-        <PayAttention/>
+        <PayAttentionRefinance/>
         <RefinanceForm/>
     </section>
 }
