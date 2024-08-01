@@ -6,9 +6,16 @@ import Services from "../components/ourServices/Services";
 import Advantages from "../components/advantages/Advantages";
 import Territory from "../components/territory/Territory";
 import News from "../components/news/News";
+import Modal from "../components/Modal/Modal";
+import { createPortal } from 'react-dom';
+import { useState } from "react";
 
 
 export default function Finmarket() {
+
+    const [openModal, setOpenModal] = useState(true)
+
+
     return <section className={styles.section_finmarket}> 
         <div className={styles.section_fin}>
             <div className={styles.fin_content}>
@@ -31,6 +38,7 @@ export default function Finmarket() {
                 <Advantages/>
                 <Territory/>
                 <News/>
+                {openModal && createPortal(<Modal open={setOpenModal} />, document.body)}
         </div>
     </section>
 }
