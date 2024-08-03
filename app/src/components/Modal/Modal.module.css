@@ -138,6 +138,13 @@
     flex-direction: column;
 }
 
+.inputs_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .inp_container {
     display: flex;
     gap: 20px;
@@ -146,6 +153,8 @@
 .text_inp {
     display: flex;
     flex-direction: column;
+    gap: 6px;
+    width: 100%;
 }
 
 .label_text {
@@ -161,6 +170,44 @@
     box-sizing: border-box;
     border: 1px solid rgb(94, 129, 255);
     border-radius: 5px;
+    padding-left: 10px;
+}
+
+.politic_container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.check {
+
+}
+
+.politic_text {
+    color: rgb(30, 34, 46);
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+}
+
+.button {
+    box-sizing: border-box;
+    border: 1px solid rgb(249, 73, 107);
+    border-radius: 5px;
+    background: rgb(249, 73, 107);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-transform: uppercase;
+    max-width: 241px;
+    height: 47px;
+    margin: 0 auto;
 }
 
 

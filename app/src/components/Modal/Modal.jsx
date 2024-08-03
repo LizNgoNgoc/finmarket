@@ -35,26 +35,33 @@ export default function Modal ({open}) {
                 </div>
             </div>
             <form action="" className={styles.form}>
-                <div className={styles.inp_container}>
-                    <div className={styles.text_inp}>
-                        <label htmlFor="" className={styles.label_text}>Телефон</label>
-                        <input type="phone" className={styles.input_text}/>
+                <div className={styles.inputs_container}>
+                    <div className={styles.inp_container}>
+                        <div className={styles.text_inp}>
+                            <label htmlFor="" className={styles.label_text}>Телефон</label>
+                            <input type="phone" className={styles.input_text}/>
+                        </div>
+                        <div className={styles.text_inp}>
+                            <label htmlFor="" className={styles.label_text}>Email</label>
+                            <input type="email" className={styles.input_text}/>
+                        </div>
                     </div>
-                    <div className={styles.text_inp}>
-                        <label htmlFor="" className={styles.label_text}>Email</label>
-                        <input type="email" className={styles.input_text}/>
+                    <div className={styles.inp_container}>
+                        <div className={styles.text_inp}>
+                            <label htmlFor="" className={styles.label_text}>Пароль</label>
+                            <input type="password" className={styles.input_text}/>
+                        </div>
+                        <div className={styles.text_inp}>
+                            <label htmlFor="" className={styles.label_text}>Повторить пароль</label>
+                            <input type="password" className={styles.input_text}/>
+                        </div>
                     </div>
                 </div>
-                <div className={styles.inp_container}>
-                    <div className={styles.text_inp}>
-                        <label htmlFor="" className={styles.label_text}>Пароль</label>
-                        <input type="password" className={styles.input_text}/>
-                    </div>
-                    <div className={styles.text_inp}>
-                        <label htmlFor="" className={styles.label_text}>Повторить пароль</label>
-                        <input type="password" className={styles.input_text}/>
-                    </div>
+                <div className={styles.politic_container}>
+                    <input type="checkbox" className={styles.check}/>
+                    <label htmlFor="" className={styles.politic_text}>Я согласен на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</label>
                 </div>
+                <button className={styles.button}>зарегистрироваться</button>
             </form>
         </div>
         </div>
