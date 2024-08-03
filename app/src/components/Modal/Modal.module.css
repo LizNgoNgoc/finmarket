@@ -133,5 +133,35 @@
     line-height: 17px;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inp_container {
+    display: flex;
+    gap: 20px;
+}
+
+.text_inp {
+    display: flex;
+    flex-direction: column;
+}
+
+.label_text {
+    color: rgb(30, 34, 46);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.input_text {
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgb(94, 129, 255);
+    border-radius: 5px;
+}
+
 
 

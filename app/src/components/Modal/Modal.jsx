@@ -34,7 +34,28 @@ export default function Modal ({open}) {
                     <label htmlFor="" className={styles.radio_label}>Банкротство</label>
                 </div>
             </div>
-            <form action=""></form>
+            <form action="" className={styles.form}>
+                <div className={styles.inp_container}>
+                    <div className={styles.text_inp}>
+                        <label htmlFor="" className={styles.label_text}>Телефон</label>
+                        <input type="phone" className={styles.input_text}/>
+                    </div>
+                    <div className={styles.text_inp}>
+                        <label htmlFor="" className={styles.label_text}>Email</label>
+                        <input type="email" className={styles.input_text}/>
+                    </div>
+                </div>
+                <div className={styles.inp_container}>
+                    <div className={styles.text_inp}>
+                        <label htmlFor="" className={styles.label_text}>Пароль</label>
+                        <input type="password" className={styles.input_text}/>
+                    </div>
+                    <div className={styles.text_inp}>
+                        <label htmlFor="" className={styles.label_text}>Повторить пароль</label>
+                        <input type="password" className={styles.input_text}/>
+                    </div>
+                </div>
+            </form>
         </div>
         </div>
     </section>
