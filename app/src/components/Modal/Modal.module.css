@@ -109,3 +109,29 @@
     background: rgb(94, 129, 255);
 }
 
+.radio_container {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.radio_content {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 43px;
+}
+
+.radio {
+    
+}
+
+.radio_label {
+    color: rgb(30, 34, 46);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+
+
