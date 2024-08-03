@@ -9,10 +9,13 @@
 }
 
 .modal {
-    background-color: white;
     min-width: 780px;
     min-height: 616px;
     padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(94, 129, 255);
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
 }
 
 .nav {
