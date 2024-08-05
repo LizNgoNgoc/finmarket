@@ -1,8 +1,9 @@
 import styles from './Modal.module.css'
+import { Link } from 'react-router-dom'
 
 
 export default function Modal ({open}) {
-    return <section className={styles.overlay}>
+    return <section className={styles.overlay} onClick={(e) => e.target === e.currentTarget && open(false)}>
         <div className={styles.modal}>
         <nav className={styles.nav}>
             <div className={styles.nav_content}>вход</div>
@@ -61,7 +62,7 @@ export default function Modal ({open}) {
                     <input type="checkbox" className={styles.check}/>
                     <label htmlFor="" className={styles.politic_text}>Я согласен на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</label>
                 </div>
-                <button className={styles.button}>зарегистрироваться</button>
+                <Link to='/anket' className={styles.button}>зарегистрироваться</Link>
             </form>
         </div>
         </div>

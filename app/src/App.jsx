@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Refinance from './pages/Refinance';
 import Buncrutcy from './pages/Buncrutcy';
 import Debts from './pages/Debts';
+import Anket from './components/Anket/Anket'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/refinance'  element={<Refinance/>} />
         <Route path='/buncrutcy'  element={<Buncrutcy/>} />
         <Route path='/debts'  element={<Debts/>} />
+        <Route path='/anket'  element={<Anket/>} />
       </Routes>
       <Footer/>
     </div>
