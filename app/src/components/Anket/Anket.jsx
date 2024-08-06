@@ -3,9 +3,16 @@ import styles from './anket.module.css'
 export default function Abket() {
     return <section className={styles.anket}>
         <div className={styles.anket_page}>
-            <span className={styles.txt}>Главная / </span><span className={styles.txt_grey}>Анкета</span>
+            <div className={styles.link}>
+                <span className={styles.txt}>Главная / </span><span className={styles.txt_grey}>Анкета</span>
+            </div>
+            <div className={styles.step}>
+                <div className={styles.number}>2</div>
+                <div className={styles.text_container}>
+                    <p className={styles.steptxt}>шаг</p>
+                </div>
+            </div>
         </div>
-        <div className={styles.number}>2</div>
         <div className={styles.container}>
             <h3 className={styles.header}>Анкета</h3>
             <div className={styles.rating}></div>

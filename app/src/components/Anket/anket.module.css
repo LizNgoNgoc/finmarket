@@ -1,21 +1,65 @@
 .anket {
     max-width: 1440px;
+    padding: 0 90px;
+}
+
+.link {
+
 }
 
 .anket_page {
-
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .txt {
-
+    color: #858181;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
 }
 
 .txt_grey {
+    color: #1E222E;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
 
+.step {
+    margin-top: 17px;
+    max-width: 232px;
+    display: flex;
+    gap: 9px;
+    margin-bottom: 17px;
 }
 
 .number {
+    padding: 5px 18px 5px 18px;
+    box-sizing: border-box;
+    border: 1px solid rgb(249, 73, 107);
+    border-radius: 5px;
+    color: rgb(30, 34, 46);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+}
 
+.text_container {
+    display: flex;
+    align-items: center;
+}
+
+.steptxt {
+    color: rgb(30, 34, 46);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 .header {
