@@ -202,12 +202,12 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 15px 30px;
     text-transform: uppercase;
     max-width: 241px;
     height: 47px;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 
