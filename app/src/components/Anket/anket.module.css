@@ -1,6 +1,7 @@
 .anket {
     max-width: 1440px;
     padding: 0 90px;
+    margin-bottom: 110px;
 }
 
 .link {
@@ -62,10 +63,188 @@
     line-height: 24px;
 }
 
-.header {
+.container {
+    display: flex;
+    justify-content: center;
+}
 
+.header {
+    color: rgb(30, 34, 46);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
 }
 
 .rating {
     
+}
+
+.organization {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    margin-bottom: 72px;
+}
+
+.fisic {
+    box-sizing: border-box;
+    border: 1px solid rgb(94, 129, 255);
+    border-radius: 5px 0px 0px 5px;
+    background: rgb(94, 129, 255);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 20px 30px 20px 30px;
+}
+
+.uri {
+    box-sizing: border-box;
+    border: 1px solid rgb(94, 129, 255);
+    border-radius: 0px 5px 5px 0px;
+    color: rgb(133, 129, 129);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 20px 30px 20px 30px;
+}
+
+.nav {
+    display: flex;
+    gap: 162px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav_text {
+    color: rgb(133, 129, 129);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.line {
+    border: 2px solid rgb(94, 129, 255);
+    margin-bottom: 30px;
+}
+
+.form_cont {
+    
+}
+
+.header_contact{
+    color: rgb(30, 34, 46);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.contact_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.cont {
+    display: flex;
+    gap: 20px;
+}
+
+.container_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.lab {
+    color: #1E222E;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 6px;
+}
+
+.input {
+    box-sizing: border-box;
+    border: 1px solid rgb(94, 129, 255);
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+}
+
+.container_city {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+} 
+
+.city_life {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.registration {
+    color: rgb(30, 34, 46);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.cont_own {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.psy {
+    display: flex;
+    gap: 33px;
+    margin-bottom: 20px;
+}
+
+.psy_health {
+    color: rgb(30, 34, 46);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.answer {
+    display: flex;
+    gap: 5px;
+}
+
+.answer_text {
+    color: rgb(30, 34, 46);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.button {
+    box-sizing: border-box;
+    border: 1px solid rgb(249, 73, 107);
+    border-radius: 5px;
+    background: rgb(249, 73, 107);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-decoration: none;
 }
