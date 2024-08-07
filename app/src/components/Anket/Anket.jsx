@@ -78,41 +78,45 @@ export default function Abket() {
                 </div>
             </div>
             <h3 className={styles.header_contact}>Другое</h3>
-            <div className={styles.psy}>
-                <p className={styles.psy_health}>Стоите ли вы на Наркологическом или Психиатрическом учете: </p>
-                <div className={styles.answer}>
-                    <input type="radio" />
-                    <label htmlFor="" className={styles.answer_text}>Да</label>
+            <div className={styles.container_citizenship}>
+                <div className={styles.psy}>
+                    <p className={styles.psy_health}>Стоите ли вы на Наркологическом или Психиатрическом учете: </p>
+                    <div className={styles.answer}>
+                        <input type="radio" />
+                        <label htmlFor="" className={styles.answer_text}>Да</label>
+                    </div>
+                    <div className={styles.answer}>
+                        <input type="radio" />
+                        <label htmlFor="" className={styles.answer_text}>Нет</label>
+                    </div>
                 </div>
-                <div className={styles.answer}>
-                    <input type="radio" />
-                    <label htmlFor="" className={styles.answer_text}>Нет</label>
+                <div className={styles.psy}>
+                    <p className={styles.psy_health}>Являетесь ли вы резидентом РФ: </p>
+                    <div className={styles.answer}>
+                        <input type="radio" />
+                        <label htmlFor="" className={styles.answer_text}>Да</label>
+                    </div>
+                    <div className={styles.answer}>
+                        <input type="radio" />
+                        <label htmlFor="" className={styles.answer_text}>Нет</label>
+                    </div>
+                </div>
+                <div className={styles.psy}>
+                    <p className={styles.psy_health}>Являетесь ли вы гражданином РФ: </p>
+                    <div className={styles.answer}>
+                        <input type="radio" />
+                        <label htmlFor="" className={styles.answer_text}>Да</label>
+                    </div>
+                    <div className={styles.answer}>
+                        <input type="radio" />
+                        <label htmlFor="" className={styles.answer_text}>Нет</label>
+                    </div>
+                    <input type="text" className={styles.input} />
                 </div>
             </div>
-            <div className={styles.psy}>
-                <p className={styles.psy_health}>Являетесь ли вы резидентом РФ: </p>
-                <div className={styles.answer}>
-                    <input type="radio" />
-                    <label htmlFor="" className={styles.answer_text}>Да</label>
-                </div>
-                <div className={styles.answer}>
-                    <input type="radio" />
-                    <label htmlFor="" className={styles.answer_text}>Нет</label>
-                </div>
-            </div>
-            <div className={styles.psy}>
-                <p className={styles.psy_health}>Являетесь ли вы гражданином РФ: </p>
-                <div className={styles.answer}>
-                    <input type="radio" />
-                    <label htmlFor="" className={styles.answer_text}>Да</label>
-                </div>
-                <div className={styles.answer}>
-                    <input type="radio" />
-                    <label htmlFor="" className={styles.answer_text}>Нет</label>
-                </div>
-                <input type="text" className={styles.input} />
-            </div>
-            <Link className={styles.button}>следующий шаг</Link>
+           <div className={styles.link_btn}>
+                <Link className={styles.button}>следующий шаг</Link>
+           </div>
         </form>
     </section>
 }

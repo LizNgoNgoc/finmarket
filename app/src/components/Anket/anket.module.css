@@ -233,6 +233,16 @@
     line-height: 17px;
 }
 
+.container_citizenship {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.link_btn {
+    display: flex;
+    justify-content: center;
+} 
+
 .button {
     box-sizing: border-box;
     border: 1px solid rgb(249, 73, 107);
@@ -245,6 +255,7 @@
     line-height: 17px;
     padding: 15px 30px;
     text-transform: uppercase;
-    margin-top: 20px;
     text-decoration: none;
+    margin: 0 auto;
 }
+
