@@ -8,6 +8,7 @@ import Refinance from './pages/Refinance';
 import Buncrutcy from './pages/Buncrutcy';
 import Debts from './pages/Debts';
 import Anket from './components/Anket/Anket'
+import Lot from './components/Lot/Lot';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/buncrutcy'  element={<Buncrutcy/>} />
         <Route path='/debts'  element={<Debts/>} />
         <Route path='/anket'  element={<Anket/>} />
+        <Route path='/lot'  element={<Lot/>} />
       </Routes>
       <Footer/>
     </div>

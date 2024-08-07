@@ -115,7 +115,7 @@ export default function Abket() {
                 </div>
             </div>
            <div className={styles.link_btn}>
-                <Link className={styles.button}>следующий шаг</Link>
+                <Link to='/lot' className={styles.button}>следующий шаг</Link>
            </div>
         </form>
     </section>
