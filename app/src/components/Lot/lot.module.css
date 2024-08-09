@@ -4,11 +4,10 @@
 }
 
 .step {
-    margin-top: 17px;
-    max-width: 232px;
     display: flex;
     gap: 9px;
-    margin-bottom: 17px;
+    justify-content: center;
+    margin: 17px 0;
 }
 
 .number {
@@ -43,6 +42,7 @@
     font-weight: 600;
     line-height: 44px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .nav {
@@ -63,7 +63,6 @@
 
 .line {
     border: 2px solid rgb(94, 129, 255);
-    margin-bottom: 30px;
 }
 
 .form {
@@ -76,6 +75,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    width: 488px;
+}
+.container_inputs .container_info{
+    width: 100%;
 }
 
 .label {
@@ -125,7 +128,8 @@
 }
 
 .checkbox {
-
+    width: 20px;
+    height: 20px;
 }
 
 .check_label {
@@ -149,4 +153,7 @@
     padding: 15px 30px;
     text-transform: uppercase;
     text-decoration: none;
+    display: block;
+    width: 110px;
+    margin: 0 auto;
 }

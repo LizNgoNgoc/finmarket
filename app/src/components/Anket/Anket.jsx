@@ -16,7 +16,12 @@ export default function Abket() {
         </div>
         <div className={styles.container}>
             <h3 className={styles.header}>Анкета</h3>
-            <div className={styles.rating}></div>
+            <div className={styles.rating}>
+                {[...Array(5)].map((star, index) => {
+                    index += 1;
+                    return( <img src="./images/anket/star.svg" alt="star" key={index}/>)})}
+                
+            </div>
         </div>
         <div className={styles.organization}>
             <div className={styles.fisic}>Физическое лицо</div>
@@ -111,7 +116,9 @@ export default function Abket() {
                         <input type="radio" />
                         <label htmlFor="" className={styles.answer_text}>Нет</label>
                     </div>
-                    <input type="text" className={styles.input} />
+                    <div className={styles.input_city}>
+                        <input type="text" className={styles.input} />
+                    </div>
                 </div>
             </div>
            <div className={styles.link_btn}>

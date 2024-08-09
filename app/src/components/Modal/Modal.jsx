@@ -62,7 +62,7 @@ export default function Modal ({open}) {
                     <input type="checkbox" className={styles.check}/>
                     <label htmlFor="" className={styles.politic_text}>Я согласен на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</label>
                 </div>
-                <Link to='/anket' className={styles.button}>зарегистрироваться</Link>
+                <Link to='/anket' className={styles.button} onClick={(e) =>e.currentTarget && open(false)}>зарегистрироваться</Link>
             </form>
         </div>
         </div>
