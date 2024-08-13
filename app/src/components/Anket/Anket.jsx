@@ -20,7 +20,6 @@ export default function Abket() {
                 {[...Array(5)].map((star, index) => {
                     index += 1;
                     return( <img src="./images/anket/star.svg" alt="star" key={index}/>)})}
-                
             </div>
         </div>
         <div className={styles.organization}>
