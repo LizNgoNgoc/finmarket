@@ -1,7 +1,17 @@
 import styles from './anket.module.css'
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 export default function Abket() {
+    const[stars, setStars] = useState([...Array(5)].fill(0))
+
+    function handleStar(index){
+        console.log(index);
+        
+        setStars(stars.map((_, i) => i <= index ? 1 : 0))
+    }
+    console.log(stars)
+
     return <section className={styles.anket}>
         <div className={styles.anket_page}>
             <div className={styles.link}>
@@ -17,9 +27,7 @@ export default function Abket() {
         <div className={styles.container}>
             <h3 className={styles.header}>Анкета</h3>
             <div className={styles.rating}>
-                {[...Array(5)].map((star, index) => {
-                    index += 1;
-                    return( <img src="./images/anket/star.svg" alt="star" key={index}/>)})}
+                {stars.map((star, index) => <div key={index} onClick={() => handleStar(index)} className={`${styles.greyStar} ${star > 0 && styles.star}`}></div> )}
             </div>
         </div>
         <div className={styles.organization}>

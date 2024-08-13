@@ -66,6 +66,8 @@
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .header {
@@ -77,7 +79,7 @@
 }
 
 .rating {
-    
+    display: flex;
 }
 
 .organization {
@@ -266,4 +268,20 @@
     text-decoration: none;
     margin: 0 auto;
 }
+.rating div {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.greyStar {
+    background-image: url(/public/images/anket/greyStar.svg);
+    background-size: cover;
+}
+.star {
+    background-image: url(/public/images/anket/star.svg);
+    background-size: cover;
+}
+
 

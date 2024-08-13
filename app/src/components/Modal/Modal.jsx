@@ -1,8 +1,16 @@
+import { useState } from 'react'
 import styles from './Modal.module.css'
 import { Link } from 'react-router-dom'
 
 
 export default function Modal ({open}) {
+
+    const [input, setInput] = useState()
+
+    function handleSubmit(e) {
+        e.preventDefault()
+    }
+
     return <section className={styles.overlay} onClick={(e) => e.target === e.currentTarget && open(false)}>
         <div className={styles.modal}>
         <nav className={styles.nav}>
@@ -35,26 +43,26 @@ export default function Modal ({open}) {
                     <label htmlFor="" className={styles.radio_label}>Банкротство</label>
                 </div>
             </div>
-            <form action="" className={styles.form}>
+            <form action="" className={styles.form} onSubmit={handleSubmit}>
                 <div className={styles.inputs_container}>
                     <div className={styles.inp_container}>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Телефон</label>
-                            <input type="phone" className={styles.input_text}/>
+                            <input type="phone" value={} className={styles.input_text} onInput={(e) => setInput(e.target.value)}/>
                         </div>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Email</label>
-                            <input type="email" className={styles.input_text}/>
+                            <input type="email" value='email' className={styles.input_text} onInput={(e) => setInput(e.target.value)}/>
                         </div>
                     </div>
                     <div className={styles.inp_container}>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Пароль</label>
-                            <input type="password" className={styles.input_text}/>
+                            <input type="password" value='password' className={styles.input_text} onInput={(e) => setInput(e.target.value)}/>
                         </div>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Повторить пароль</label>
-                            <input type="password" className={styles.input_text}/>
+                            <input type="password" value='repeatpass' className={styles.input_text} onInput={(e) => setInput(e.target.value)}/>
                         </div>
                     </div>
                 </div>
