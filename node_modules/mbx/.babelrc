@@ -1,0 +1,4 @@
+{
+	// 把装饰器语法转成es5
+	"plugins": ['transform-decorators-legacy']
+}

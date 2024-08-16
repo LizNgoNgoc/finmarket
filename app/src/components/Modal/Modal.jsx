@@ -17,8 +17,8 @@ export default function Modal ({open}) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        const value = {phone, email, password, repeatPass}
-        console.log(value)
+        const valueElements = {phone, email, password, repeatPass}
+        console.log(valueElements)
     }
     
 
