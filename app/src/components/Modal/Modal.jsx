@@ -1,24 +1,22 @@
 import styles from './Modal.module.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import stateUserData from '../../store/modal'
+import { observer } from 'mobx-react-lite'
 
-export default function Modal ({open}) {
 
-    // const[input,setInput] = useState({
-    //     phone: '',
-    //     email: '',
-    //     password: '',
-    //     repeatPass: '',
-    // })
-    const [phone, setPhone] = useState('')
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [repeatPass, setRepeat] = useState('')
 
+const Modal = observer(({open}) => {
+    console.log(stateUserData);
+
+    
     function handleSubmit(e) {
         e.preventDefault()
-        const valueElements = {phone, email, password, repeatPass}
-        console.log(valueElements)
+        console.log(stateUserData.step1)
+    }
+
+    function handleInp (e){
+        stateUserData.setStep1(e.target.name, e.target.value)
     }
     
 
@@ -59,21 +57,21 @@ export default function Modal ({open}) {
                     <div className={styles.inp_container}>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Телефон</label>
-                            <input type="phone" value={phone} className={styles.input_text} onChange={(e) => setPhone(e.target.value)}/>
+                            <input type="phone" value={stateUserData.step1.phone} name='phone' className={styles.input_text} onChange={handleInp}/>
                         </div>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Email</label>
-                            <input type="email" value={email} className={styles.input_text} onChange={(e) => setEmail(e.target.value)}/>
+                            <input type="email" value={stateUserData.step1.email} className={styles.input_text} onChange={handleInp}/>
                         </div>
                     </div>
                     <div className={styles.inp_container}>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Пароль</label>
-                            <input type="password" value={password} className={styles.input_text} onChange={(e) => setPassword(e.target.value)}/>
+                            <input type="password" value={stateUserData.step1.password} className={styles.input_text} onChange={handleInp}/>
                         </div>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Повторить пароль</label>
-                            <input type="password" value={repeatPass} className={styles.input_text} onChange={(e) => setRepeat(e.target.value)}/>
+                            <input type="password" className={styles.input_text} />
                         </div>
                     </div>
                 </div>
@@ -86,4 +84,6 @@ export default function Modal ({open}) {
         </div>
         </div>
     </section>
-}
+})
+
+export default Modal
