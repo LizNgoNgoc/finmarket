@@ -1,6 +1,5 @@
 import styles from './Modal.module.css'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 import stateUserData from '../../store/modal'
 import { observer } from 'mobx-react-lite'
 
