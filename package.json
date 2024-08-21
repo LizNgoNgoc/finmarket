@@ -3,6 +3,7 @@
     "mbx": "^1.0.0",
     "mobx": "^6.13.1",
     "mobx-react-lite": "^4.0.7",
-    "mobx-state-tree": "^6.0.1"
+    "mobx-state-tree": "^6.0.1",
+    "react-hook-form": "^7.52.2"
   }
 }
