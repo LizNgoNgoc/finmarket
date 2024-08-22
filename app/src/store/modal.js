@@ -44,6 +44,14 @@ class StateUserData {
         this.step1 = {...this.step1, [key] : value}
     }
 
+    setStep2(key, value) {
+        this.step2 = {...this.step2, [key] : value}
+    }
+
+    getStep2(){
+        return this.step2
+    }
+
 
     
 }

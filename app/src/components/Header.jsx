@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Modal from "../components/Modal/Modal";
 import { createPortal } from 'react-dom';
 import { useState } from "react";
+import stateUserData from '../store/modal';
 
 export default function Header() {
 
@@ -27,6 +28,6 @@ export default function Header() {
             <Link className={styles.nav_paragraph}>Статьи</Link>
             <Link className={styles.nav_paragraph}>О проекте</Link>
         </nav>
-        {openModal && createPortal(<Modal open={setOpenModal} />, document.body)}
+        {openModal && createPortal(<Modal open={setOpenModal} stateUserData={stateUserData} />, document.body)}
     </header>
 }

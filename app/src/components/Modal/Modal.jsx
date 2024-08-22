@@ -1,23 +1,19 @@
 import styles from './Modal.module.css'
 import { Link } from 'react-router-dom'
-import stateUserData from '../../store/modal'
 import { observer } from 'mobx-react-lite'
 
 
 
-const Modal = observer(({open}) => {
-    console.log(stateUserData);
+const Modal = observer(({open, stateUserData}) => {
 
-    
     function handleSubmit(e) {
         e.preventDefault()
         console.log(stateUserData.step1)
     }
 
     function handleInp (e){
-        stateUserData.setStep1(e.target.name, e.target.value)
+        stateUserData.setStep1(e.target.name, e.target.value)    
     }
-    
 
     return <section className={styles.overlay} onClick={(e) => e.target === e.currentTarget && open(false)}>
         <div className={styles.modal}>
