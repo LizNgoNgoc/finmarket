@@ -1,4 +1,4 @@
-import { makeObservable, makeAutoObservable } from "mobx"; //1. делает класс отслеживаемым 2. автоматически все настраивает, принимая контекст класса
+import { makeAutoObservable } from "mobx"; //1. делает класс отслеживаемым 2. автоматически все настраивает, принимая контекст класса
 
 class StateUserData {
     step1 = {
@@ -52,7 +52,9 @@ class StateUserData {
         return this.step2
     }
 
-
+    getStep3(){
+        return this.step3
+    }
     
 }
 
