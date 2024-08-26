@@ -13,11 +13,11 @@ const Lot = observer(() => {
 
     function handleSubmit(e){
         e.preventDefault()
-        console.log(stateUserData.getStep2())
+        console.log(stateUserData.getFullStep())
     }
 
     function handleInp(e) {
-        stateUserData.setStep2(e.target.name, e.target.value)
+        stateUserData.setStep3(e.target.name, e.target.value)
     }
 
     return <section className={styles.lot}>

@@ -1,11 +1,21 @@
 import styles from './anket.module.css'
-import { Link } from 'react-router-dom'
 import { useState } from 'react';
 import { observer } from 'mobx-react-lite'
 import stateUserData from '../../store/modal';
+import { useNavigate } from 'react-router-dom';
 
 const Anket = observer(() => {
     const[stars, setStars] = useState([...Array(5)].fill(0))
+    const [checked, setChecked] = useState(true)
+    const navigate = useNavigate()
+
+    function handleClick() {
+        navigate('/lot')
+    }
+
+    function handleCheck() {
+        setChecked(!checked)
+    }
 
     function handleStar(index){
         console.log(index);
@@ -87,7 +97,7 @@ const Anket = observer(() => {
             </div>
             <h3 className={styles.header_contact}>Город фактического проживания</h3>
             <div className={styles.city_life}>
-                <input type="checkbox" value={stateUserData.step2.sameAddress} name='sameAddress'/>
+                <input type="checkbox" value={stateUserData.step2.sameAddress} name='sameAddress' onChange={handleCheck}/>
                 <label htmlFor="" className={styles.registration}>Совпадает с городом регистрации</label>
             </div>
             <div className={styles.cont_own}>
@@ -105,33 +115,33 @@ const Anket = observer(() => {
                 <div className={styles.psy}>
                     <p className={styles.psy_health}>Стоите ли вы на Наркологическом или Психиатрическом учете: </p>
                     <div className={styles.answer}>
-                        <input type="radio" name='psy'/>
+                        <input type="radio" name='psy'onChange={handleCheck}/>
                         <label htmlFor="" className={styles.answer_text}>Да</label>
                     </div>
                     <div className={styles.answer}>
-                        <input type="radio" name='psy'/>
+                        <input type="radio" name='psy'onChange={handleCheck}/>
                         <label htmlFor="" className={styles.answer_text}>Нет</label>
                     </div>
                 </div>
                 <div className={styles.psy}>
                     <p className={styles.psy_health}>Являетесь ли вы резидентом РФ: </p>
                     <div className={styles.answer}>
-                        <input type="radio" name='residentRussia'/>
+                        <input type="radio" name='residentRussia' onChange={handleCheck}/>
                         <label htmlFor="" className={styles.answer_text}>Да</label>
                     </div>
                     <div className={styles.answer}>
-                        <input type="radio" name='residentRussia'/>
+                        <input type="radio" name='residentRussia' onChange={handleCheck}/>
                         <label htmlFor="" className={styles.answer_text}>Нет</label>
                     </div>
                 </div>
                 <div className={styles.psy}>
-                    <p className={styles.psy_health}>Являетесь ли вы гражданином РФ: </p>
+                    <p className={styles.psy_health}>Являетесь ли вы гражданином РФ:</p>
                     <div className={styles.answer}>
-                        <input type="radio" name='citizen'/>
+                        <input type="radio" name='citizen' onChange={handleCheck}/>
                         <label htmlFor="" className={styles.answer_text}>Да</label>
                     </div>
                     <div className={styles.answer}>
-                        <input type="radio" name='citizen'/>
+                        <input type="radio" name='citizen' onChange={handleCheck}/>
                         <label htmlFor="" className={styles.answer_text}>Нет</label>
                     </div>
                     <div className={styles.input_city}>
@@ -140,7 +150,7 @@ const Anket = observer(() => {
                 </div>
             </div>
            <div className={styles.link_btn}>
-                <button  className={styles.button}>следующий шаг</button>
+                <button type='button' onClick={handleClick} className={styles.button}>следующий шаг</button>
            </div>
         </form>
     </section>

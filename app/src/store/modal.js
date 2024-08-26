@@ -1,4 +1,5 @@
 import { makeAutoObservable } from "mobx"; //1. делает класс отслеживаемым 2. автоматически все настраивает, принимая контекст класса
+import { observable, autorun } from "mobx"
 
 class StateUserData {
     step1 = {
@@ -48,6 +49,10 @@ class StateUserData {
         this.step2 = {...this.step2, [key] : value}
     }
 
+    setStep3(key, value) {
+        this.step3 = {...this.step3, [key] : value}
+    }
+
     getStep2(){
         return this.step2
     }
@@ -55,9 +60,20 @@ class StateUserData {
     getStep3(){
         return this.step3
     }
+
+    getFullStep() {
+        return {step1:this.step1, step2:this.step2, step3:this.step3}
+    }
     
 }
 
 const stateUserData = new StateUserData()
+const login = observable.box(stateUserData)
+
+
+autorun(() => {
+    console.log(login.get())
+})
+
 
 export default stateUserData
