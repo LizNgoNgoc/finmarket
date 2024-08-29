@@ -15,6 +15,8 @@ const Modal = observer(({open, stateUserData}) => {
         stateUserData.setStep1(e.target.name, e.target.value)    
     }
 
+    
+
     return <section className={styles.overlay} onClick={(e) => e.target === e.currentTarget && open(false)}>
         <div className={styles.modal}>
         <nav className={styles.nav}>
@@ -56,13 +58,13 @@ const Modal = observer(({open, stateUserData}) => {
                         </div>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Email</label>
-                            <input type="email" value={stateUserData.step1.email} className={styles.input_text} onChange={handleInp}/>
+                            <input type="email" value={stateUserData.step1.email} name='email' className={styles.input_text} onChange={handleInp}/>
                         </div>
                     </div>
                     <div className={styles.inp_container}>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Пароль</label>
-                            <input type="password" value={stateUserData.step1.password} className={styles.input_text} onChange={handleInp}/>
+                            <input type="password" value={stateUserData.step1.password} name='password' className={styles.input_text} onChange={handleInp}/>
                         </div>
                         <div className={styles.text_inp}>
                             <label htmlFor="" className={styles.label_text}>Повторить пароль</label>

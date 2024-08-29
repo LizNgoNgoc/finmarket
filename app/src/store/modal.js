@@ -41,25 +41,32 @@ class StateUserData {
         makeAutoObservable(this)
     }
 
+    
     setStep1(key, value) {
+        console.log(key);
+        
         this.step1 = {...this.step1, [key] : value}
     }
-
+    
     setStep2(key, value) {
         this.step2 = {...this.step2, [key] : value}
     }
-
+    
     setStep3(key, value) {
         this.step3 = {...this.step3, [key] : value}
     }
 
-    getStep2(){
-        return this.step2
-    }
+    // getStep1(){
+    //     return this.step1
+    // }
 
-    getStep3(){
-        return this.step3
-    }
+    // getStep2(){
+    //     return this.step2
+    // }
+
+    // getStep3(){
+    //     return this.step3
+    // }
 
     getFullStep() {
         return {step1:this.step1, step2:this.step2, step3:this.step3}
