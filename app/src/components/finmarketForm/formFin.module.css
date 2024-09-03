@@ -98,3 +98,21 @@
 .show {
     display: block;
 }
+
+@media (min-width: 320px) {
+    .form_container {
+        min-width: 320px;
+    }
+
+    .nav_form {
+        padding-left: 40px;
+    }
+    .form_line {
+        width: 320px;
+    }
+    
+    .form_inp {
+        width: 300px;
+    }
+
+}

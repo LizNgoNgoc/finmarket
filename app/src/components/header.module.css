@@ -66,3 +66,30 @@
     line-height: 19px;
     text-decoration: none;
 }
+
+@media (min-width: 320px) {
+    .header {
+        max-width: 320px;
+    }
+
+    .header_container {
+        padding: 0;
+    }
+
+    .header_phone {
+        display: none;
+    }
+
+    .header_text {
+        display: none;
+    }
+
+    .header_line {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .header_nav {
+        display: none;
+    }
+}

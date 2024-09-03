@@ -151,3 +151,21 @@
     margin-bottom: 7px;
 }
 
+
+@media (min-width: 320px) {
+    .service_container {
+        flex-direction: column;
+    }
+
+    .service_text {
+        display: none;
+    }
+
+    .service_btn {
+        display: none;
+    }
+
+    .rules_part {
+        flex-direction: column;
+    }
+}
