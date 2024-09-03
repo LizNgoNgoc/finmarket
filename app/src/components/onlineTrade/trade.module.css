@@ -295,7 +295,7 @@
     max-height: 800px;
 }
 
-@media (min-width:320px) {
+@media (max-width: 500px) {
     .trade_category {
         display: none;
     }

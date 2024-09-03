@@ -10,6 +10,9 @@ import News from "../components/news/News";
 
 
 export default function Finmarket() {
+
+    
+
     return <section className={styles.section_finmarket}> 
         <div className={styles.section_fin}>
             <div className={styles.fin_content}>

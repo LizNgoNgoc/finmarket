@@ -91,7 +91,7 @@
     color: #1E222E;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 500px) {
     .img {
         display: none;
     }

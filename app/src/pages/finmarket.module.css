@@ -75,12 +75,11 @@
     display: flex;
 }
 
-@media (min-width: 320px) {
-    .fin_container {
+@media (max-width: 500px) {
+    .fin_container{
         display: none;
     }
-
-    .section_finmarket {
-        max-width: 320px;
-    }
+    
 }
+
+
