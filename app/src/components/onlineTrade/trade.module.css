@@ -294,3 +294,17 @@
 .toggle {
     max-height: 800px;
 }
+
+@media (min-width:320px) {
+    .trade_category {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .table_container {
+        display: none;
+    }
+}

@@ -18,7 +18,11 @@
 }
 
 .img {
-    
+    display: block;
+}
+
+.img_media {
+    display: none;
 }
 
 .card_container {
@@ -67,6 +71,10 @@
     margin-bottom: 130px;
 }
 
+.coin_container_media {
+    display: none;
+}
+
 .name_coin {
     font-family: Inter;
     font-size: 20px;
@@ -81,4 +89,37 @@
     font-weight: 400;
     line-height: 24px;
     color: #1E222E;
+}
+
+@media (min-width: 320px) {
+    .img {
+        display: none;
+    }
+
+    .img_media {
+        display: block;
+    }
+
+    .card_container {
+        display: none;
+    }
+
+    .card_container_cityes {
+        display: none;
+    }
+
+    .card_container_clients {
+        display: none;
+    }
+
+    .coin_container {
+        display: none;
+    }
+
+    .coin_container_media {
+        display: flex;
+        gap: 15px;
+        padding-top: 20px;
+        margin-bottom: 130px;
+    }
 }
