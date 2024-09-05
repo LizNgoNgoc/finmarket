@@ -296,12 +296,12 @@
 }
 
 @media (max-width: 500px) {
-    .trade_category {
-        display: none;
+    .nav {
+        gap: 17px;
     }
 
-    .nav {
-        display: none;
+    .nav_category {
+        font-size: 10px;
     }
 
     .table_container {
@@ -311,4 +311,10 @@
     .media {
         max-width: 500px;
     }
+
+    .media_table {
+        width: 100%;
+        display: flex;
+    }
+   
 }
