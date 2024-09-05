@@ -56,6 +56,10 @@
     gap: 21px;
 }
 
+.rules_part_media {
+    display: flex;
+    gap: 21px;
+}
 .step_container {
     position: absolute;
     display: flex;
@@ -153,6 +157,10 @@
 
 
 @media (max-width: 500px) {
+    .service_info {
+        width: 500px;
+    }
+
     .service_container {
         flex-direction: column;
     }

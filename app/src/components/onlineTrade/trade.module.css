@@ -307,4 +307,8 @@
     .table_container {
         display: none;
     }
+
+    .media {
+        max-width: 500px;
+    }
 }

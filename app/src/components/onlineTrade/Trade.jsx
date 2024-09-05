@@ -36,5 +36,6 @@ export default function Trade() {
             <hr className={styles.line_category} />
             <button className={styles.archive_btn}>АРХИВ ТОРГОВ</button>
             </div>
+            <div className={styles.media}></div>
     </section>
 }

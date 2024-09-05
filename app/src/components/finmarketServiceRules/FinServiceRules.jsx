@@ -8,8 +8,8 @@ export default function FinServiceRules() {
             <b className={styles.service_btn}>ПОДРОБНЕЕ</b>
         </div>
         <div className={styles.rules_container}>
-            <div className={styles.rules_part}>
-                <div >
+            <div className={styles.rules_part_media}>
+                <div>
                     <div className={styles.step_container}>
                         <div className={styles.num_container}>1</div>
                         <p className={styles.num_step}>шаг</p>
