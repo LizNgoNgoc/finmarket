@@ -50,7 +50,25 @@ export default function Trade() {
                         <p className={styles.table_td}>Статус</p>
                     </div>
                     {trade.map((item, index) => {
-                return <div className={styles.card}></div>
+                return <div className={styles.card}>
+                    <p>211</p>
+                    <div>
+                        <p>Займ </p>
+                        <p>Автотранспорт</p>
+                    </div>
+                    <div>
+                        <p>96,000 ₽</p>
+                        <p>18 мес</p>
+                    </div>
+                    <div>
+                        <p>Физ.лица</p>
+                        <img src="" alt="" />
+                    </div>
+                    <div></div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
             })}
                 </div>
             </div>
