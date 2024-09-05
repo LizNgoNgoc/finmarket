@@ -50,7 +50,7 @@ export default function Trade() {
                         <p className={styles.table_td}>Статус</p>
                     </div>
                     {trade.map((item, index) => {
-                return <TradeBlock  key={index} item={item}/>
+                return <div className={styles.card}></div>
             })}
                 </div>
             </div>
