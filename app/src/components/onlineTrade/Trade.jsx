@@ -39,8 +39,19 @@ export default function Trade() {
             <div className={styles.media}>
                 <hr />
                 <div className={styles.media_table}>
-                    <div></div>
-                    <div></div>
+                    <div className={styles.table_headers}>
+                        <p className={styles.table_td}>№</p>
+                        <p className={styles.table_td}>Обеспечение</p>
+                        <p className={styles.table_td}>Сумма/Срок</p>
+                        <p className={styles.table_td}>Заёмщик</p>
+                        <p className={styles.table_td}>Участники</p>
+                        <p className={styles.table_td}>ПРОЦЕНТ</p>
+                        <p className={styles.table_td}>Нас.пункт</p>
+                        <p className={styles.table_td}>Статус</p>
+                    </div>
+                    {trade.map((item, index) => {
+                return <TradeBlock  key={index} item={item}/>
+            })}
                 </div>
             </div>
     </section>

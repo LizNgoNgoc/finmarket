@@ -316,5 +316,21 @@
         width: 100%;
         display: flex;
     }
+
+    .table_headers {
+        background-color: #E8ECFF;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 6px 11px 9px;
+    }
    
+    .table_td {
+        color: rgb(30, 34, 46);
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        text-transform: lowercase;
+    }
 }
