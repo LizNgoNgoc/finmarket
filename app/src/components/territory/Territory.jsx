@@ -75,6 +75,14 @@ export default function Territory() {
                 <h3 className={styles.name_coin}>JPY</h3>
                 <p className={styles.value_coin}>60,8685</p>
             </div>
+            <div>
+                <h3 className={styles.name_coin}>SEK</h3>
+                <p className={styles.value_coin}>60,8685</p>
+            </div>
+            <div>
+                <h3 className={styles.name_coin}>AUD</h3>
+                <p className={styles.value_coin}>60,8685</p>
+            </div>
         </div>
     </section>
 }

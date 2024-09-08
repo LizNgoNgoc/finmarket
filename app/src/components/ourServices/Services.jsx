@@ -25,5 +25,11 @@ export default function Services() {
                 <button className={styles.btn_servcont}>ПОДРОБНЕЕ</button>
             </div>
         </div>
+        <div className={styles.serv_media}>
+            <div className={styles.service_block}>получение ЗаймА</div>
+            <div className={styles.service_block}>рефинансирование займа</div>
+            <div className={styles.service_block}>банкротство</div>
+            <div className={styles.service_block}>ВОЗВРАТ ДОЛГОВ</div>
+        </div>
     </section>
 }

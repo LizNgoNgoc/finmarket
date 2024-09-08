@@ -83,7 +83,43 @@
 }
 
 @media (max-width: 500px) {
+    .services {
+        background-color: #375FEE;
+    }
+
     .services_container {
         display: none;
+    }
+
+    .header_services {
+        color: white;
+        padding-top: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .serv_media {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 28px;
+    }
+
+    .service_block {
+        padding: 25px 68px 25px 67px;
+        box-sizing: border-box;
+        border: 1px solid rgb(55, 95, 238);
+        border-radius: 5px;
+        box-shadow: 4px 4px 10px 0px rgb(61, 82, 158);
+        background: rgb(255, 255, 255);
+        color: rgb(30, 34, 46);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        text-transform: uppercase;
+        text-align: center;
     }
 }

@@ -43,3 +43,23 @@
     line-height: 17px;
     color: #858181;
 }
+
+.news_media {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .news_container {
+        display: none;
+    }
+
+    .news_media {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .header_news {
+        text-align: center;
+    }
+}
