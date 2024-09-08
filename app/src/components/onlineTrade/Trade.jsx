@@ -49,27 +49,28 @@ export default function Trade() {
                         <p className={styles.table_td}>Нас.пункт</p>
                         <p className={styles.table_td}>Статус</p>
                     </div>
-                    {trade.map((item, index) => {
-                return <div className={styles.card}>
-                    <p>211</p>
-                    <div>
-                        <p>Займ </p>
-                        <p>Автотранспорт</p>
+                    {/* {trade.map((item, index) => { */}
+                {/* return  */}
+                <div className={styles.card}>
+                    <p className={styles.media_text}>211</p>
+                    <div className={styles.media_block}>
+                        <p className={styles.media_text}>Займ </p>
+                        <p className={styles.media_text}>Автотранспорт</p>
                     </div>
-                    <div>
-                        <p>96,000 ₽</p>
-                        <p>18 мес</p>
+                    <div className={styles.media_block}>
+                        <p className={styles.media_text}>96,000 ₽</p>
+                        <p className={styles.media_text}>18 мес</p>
                     </div>
-                    <div>
-                        <p>Физ.лица</p>
+                    <div className={styles.media_block}>
+                        <p className={styles.media_text}>Физ.лица</p>
                         <img src="" alt="" />
                     </div>
-                    <div></div>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                    <p className={styles.media_text}>ломбард, частный кредитор</p>
+                    <p className={styles.media_text}>8% годовых</p>
+                    <p className={styles.media_text}>Санкт-Петербург</p>
+                    <p className={styles.media_text}>Завершены</p>
                 </div>
-            })}
+         {/* })} */}
                 </div>
             </div>
     </section>
