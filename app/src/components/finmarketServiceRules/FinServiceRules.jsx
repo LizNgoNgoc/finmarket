@@ -9,7 +9,7 @@ export default function FinServiceRules() {
         </div>
         <div className={styles.rules_container}>
             <div className={styles.rules_part_media}>
-                <div>
+                <div className={styles.media}>
                     <div className={styles.step_container}>
                         <div className={styles.num_container}>1</div>
                         <p className={styles.num_step}>шаг</p>
@@ -19,7 +19,7 @@ export default function FinServiceRules() {
                         <p className={styles.paragraph_text}>Выберите роль: - получатель услуги - поставщик услугил</p>
                     </div>
                 </div>
-                <div>
+                <div className={styles.media}>
                     <div className={styles.step_container}>
                         <div className={styles.num_container}>2</div>
                         <p className={styles.num_step}>шаг</p>
@@ -31,7 +31,7 @@ export default function FinServiceRules() {
                 </div>
             </div>
             <div className={styles.rules_part}>
-                <div >
+                <div className={styles.media_num}>
                     <div className={styles.step_container}>
                         <div className={styles.num_container}>3</div>
                         <p className={styles.num_step}>шаг</p>

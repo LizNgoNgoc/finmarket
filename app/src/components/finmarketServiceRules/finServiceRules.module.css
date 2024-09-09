@@ -157,6 +157,14 @@
 
 
 @media (max-width: 500px) {
+    .media {
+        
+    }
+
+    .text_container {
+        width: 200px;
+    }
+
     .service_info {
         width: 500px;
     }

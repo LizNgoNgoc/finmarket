@@ -297,7 +297,7 @@
 
 @media (max-width: 500px) {
     .container_media {
-        
+        margin-bottom: 20px;
     }
 
     .nav {

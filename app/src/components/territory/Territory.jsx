@@ -19,6 +19,20 @@ export default function Territory() {
                 <p className={styles.text_card}>клиентов получивших услугу</p>
             </div>
         </div>
+        <div className={styles.media_container}>
+            <div className={styles.media_poffers}>
+                <p>55</p>
+                <p>городов присутствия</p>
+            </div>
+            <div>
+                <p> 1000</p>
+                <p>клиентов получивших услугу</p>
+            </div>
+            <div>
+                <p> 1000</p>
+                <p>готовы дать вам лучшее предложение</p>
+            </div>
+        </div>
         <hr className={styles.territory_line}/>
         <div className={styles.coin_container}>
             <div>
