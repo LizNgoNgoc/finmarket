@@ -38,40 +38,44 @@ export default function Trade() {
             </div>
             <div className={styles.media}>
                 <hr />
-                <div className={styles.media_table}>
-                    <div className={styles.table_headers}>
-                        <p className={styles.table_td}>№</p>
-                        <p className={styles.table_td}>Обеспечение</p>
-                        <p className={styles.table_td}>Сумма/Срок</p>
-                        <p className={styles.table_td}>Заёмщик</p>
-                        <p className={styles.table_td}>Участники</p>
-                        <p className={styles.table_td}>ПРОЦЕНТ</p>
-                        <p className={styles.table_td}>Нас.пункт</p>
-                        <p className={styles.table_td}>Статус</p>
+                <div className={styles.container_media}>
+                    <div className={styles.media_table}>
+                        <div className={styles.table_headers}>
+                            <p className={styles.table_td}>№</p>
+                            <p className={styles.table_td}>Обеспечение</p>
+                            <p className={styles.table_td}>Сумма/Срок</p>
+                            <p className={styles.table_td}>Заёмщик</p>
+                            <p className={styles.table_td}>Участники</p>
+                            <p className={styles.table_td}>ПРОЦЕНТ</p>
+                            <p className={styles.table_td}>Нас.пункт</p>
+                            <p className={styles.table_td}>Статус</p>
+                        </div>
+                        {/* {trade.map((item, index) => { */}
+                    {/* return  */}
+                    <div className={styles.card}>
+                        <p className={styles.media_text}>211</p>
+                        <div className={styles.media_block}>
+                            <p className={styles.media_text}>Займ </p>
+                            <p className={styles.media_text}>Автотранспорт</p>
+                        </div>
+                        <div className={styles.media_block}>
+                            <p className={styles.media_text}>96,000 ₽</p>
+                            <p className={styles.media_text}>18 мес</p>
+                        </div>
+                        <div className={styles.media_block}>
+                            <p className={styles.media_text}>Физ.лица</p>
+                            <img src="" alt="" />
+                        </div>
+                        <p className={styles.media_text}>ломбард, частный кредитор</p>
+                        <p className={styles.media_text}>8% годовых</p>
+                        <p className={styles.media_text}>Санкт-Петербург</p>
+                        <p className={styles.media_text}>Завершены</p>
                     </div>
-                    {/* {trade.map((item, index) => { */}
-                {/* return  */}
-                <div className={styles.card}>
-                    <p className={styles.media_text}>211</p>
-                    <div className={styles.media_block}>
-                        <p className={styles.media_text}>Займ </p>
-                        <p className={styles.media_text}>Автотранспорт</p>
+            {/* })} */}
                     </div>
-                    <div className={styles.media_block}>
-                        <p className={styles.media_text}>96,000 ₽</p>
-                        <p className={styles.media_text}>18 мес</p>
-                    </div>
-                    <div className={styles.media_block}>
-                        <p className={styles.media_text}>Физ.лица</p>
-                        <img src="" alt="" />
-                    </div>
-                    <p className={styles.media_text}>ломбард, частный кредитор</p>
-                    <p className={styles.media_text}>8% годовых</p>
-                    <p className={styles.media_text}>Санкт-Петербург</p>
-                    <p className={styles.media_text}>Завершены</p>
-                </div>
-         {/* })} */}
-                </div>
+                    <button className={styles.btn_media}>ПОСМОТРЕТЬ</button>
+                </div> 
+                <button className={styles.btn_arch}>архив торгов</button>
             </div>
     </section>
 }
