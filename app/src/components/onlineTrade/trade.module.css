@@ -367,6 +367,7 @@
         font-weight: 500;
         line-height: 15px;
         padding: 10px 20px 10px 20px;
+        margin-left: 70%;
     }
 
     .btn_arch {
@@ -381,6 +382,6 @@
         line-height: 17px;
         padding: 10px 20px 10px 20px;
         text-transform: uppercase;
-        margin: 0 auto;
+        margin-left: 37%;
     }
 }
