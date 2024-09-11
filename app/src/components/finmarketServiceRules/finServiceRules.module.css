@@ -171,6 +171,8 @@
 
     .service_container {
         flex-direction: column;
+        max-width: 500px;
+        padding-left: 0;
     }
 
     .service_text {
@@ -183,5 +185,9 @@
 
     .rules_part {
         flex-direction: column;
+    }
+
+    .text_container_media {
+        width: 421px;
     }
 }

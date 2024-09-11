@@ -36,7 +36,7 @@ export default function FinServiceRules() {
                         <div className={styles.num_container}>3</div>
                         <p className={styles.num_step}>шаг</p>
                     </div>
-                    <div className={`${styles.text_container} ${styles.third_container}`}>
+                    <div className={`${styles.text_container} ${styles.third_container} ${styles.text_container_media}`}>
                         <h3 className={styles.header_text}>Отправьте лот на торги и участвуйто в аукционе</h3>
                         <p className={`${styles.paragraph_text} ${styles.paragraph_text_mb}`}>или</p>
                         <h3 className={styles.header_text}>Создайте готовое предложение и получайте отклики</h3>
@@ -47,7 +47,7 @@ export default function FinServiceRules() {
                         <div className={styles.num_container}>4</div>
                         <p className={styles.num_step}>шаг</p>
                     </div>
-                    <div className={`${styles.text_container} ${styles.forth_container}`}>
+                    <div className={`${styles.text_container} ${styles.forth_container} ${styles.text_container_media}`}>
                         <h3 className={styles.header_text}>Получайте результат и организуйте встречу</h3>
                         <p className={styles.paragraph_text}>Конечный результат на FinMarket.pro это обмен контактными данными. Ждите звонка от победителя торгов и организуйте встречу</p>
                     </div>

@@ -2,6 +2,7 @@ import styles from './territory.module.css'
 
 export default function Territory() {
     return <section className={styles.territory}>
+        <div className={styles.media_territory}>
         <h2 className={styles.territory_header}>Мы представлены на всей территории РФ</h2>
         <div className={styles.img_container}>
             <img src="./images/territory/card.png" className={styles.img} alt="img" />
@@ -21,17 +22,18 @@ export default function Territory() {
         </div>
         <div className={styles.media_container}>
             <div className={styles.media_poffers}>
-                <p>55</p>
-                <p>городов присутствия</p>
+                <p className={styles.text_count}>55</p>
+                <p className={styles.text_media}>городов присутствия</p>
             </div>
-            <div>
-                <p> 1000</p>
-                <p>клиентов получивших услугу</p>
+            <div className={styles.media_poffers}>
+                <p className={styles.text_count}> {'>'}1000</p>
+                <p className={styles.text_media}>клиентов получивших услугу</p>
             </div>
-            <div>
-                <p> 1000</p>
-                <p>готовы дать вам лучшее предложение</p>
+            <div className={styles.media_poffers}>
+                <p className={styles.text_count}> {'>'}1000</p>
+                <p className={styles.text_media}>готовы дать вам лучшее предложение</p>
             </div>
+        </div>
         </div>
         <hr className={styles.territory_line}/>
         <div className={styles.coin_container}>
