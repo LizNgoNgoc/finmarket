@@ -5,6 +5,12 @@ export default function Footer() {
     return <section className={styles.footer}>
         <hr className={styles.footer_line}/>
         <div className={styles.footer_container}>
+            <div className={styles.link_content_media}>
+                    <Link className={styles.footer_link}>Пользовательское соглашение</Link>
+                    <Link className={styles.footer_link}>Политика конфиденциальности</Link>
+                    <Link className={styles.footer_link}>Рекламодателям и партнерам</Link>
+                    <Link className={styles.footer_link}>Контакты</Link>
+                </div>
             <div className={styles.logo_container}>
                 <img src="./images/header/logo.svg" className={styles.logo_img} alt="img" />
                 <p className={styles.text_logo}>информационно-коммуникационный ресурс</p>
