@@ -112,3 +112,44 @@
     font-size: 20px;
     font-weight: 500;
 }
+
+@media (max-width: 500px) {
+    .borrow {
+        max-width: 500px;
+        padding: 0 20px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .borrow_info {
+        align-items: center;
+    }
+
+    .borrow_header {
+        text-align: center;
+    }
+
+    .text_container {
+        text-align: start;
+    }
+
+    .img_container {
+        display: none;
+    }
+
+    .borrow_btn {
+        margin: 0 auto;
+        margin-bottom: 51px;
+    }
+
+    .rules_info {
+        flex-direction: column;
+    }
+
+    .rules_cont {
+        height: 230px;
+        max-width: 500px;
+    }
+}

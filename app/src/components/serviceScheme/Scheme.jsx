@@ -52,6 +52,13 @@ export default function Scheme() {
                     </div>
                 </div>
             </div>
+            <div className={styles.pagination}>
+                <img src="./images/media/pagination1.png" alt="img" />
+                <img src="./images/media/pagination1.png" alt="img" />
+                <img src="./images/media/pagination1.png" alt="img" />
+                <img src="./images/media/pagination1.png" alt="img" />
+                <img src="./images/media/pagination1.png" alt="img" />
+            </div>
         </div>
     </section>
 }

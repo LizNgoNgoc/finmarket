@@ -157,10 +157,6 @@
 
 
 @media (max-width: 500px) {
-    .media {
-        
-    }
-
     .text_container {
         width: 200px;
     }
@@ -189,5 +185,9 @@
 
     .text_container_media {
         width: 421px;
+    }
+
+    .first_container {
+        padding-bottom: 73px;
     }
 }

@@ -86,6 +86,34 @@
     line-height: 19px;
 }
 
-@media (min-width: 320px) {
-    
+.pagination {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .scheme_container {
+        flex-direction: column;
+    }
+
+    .container_info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .scheme_text {
+        display: none;
+    }
+
+    .box {
+        display: none;
+    }
+
+    .ordinary_box {
+        text-align: center;
+    }
+
+    .pagination {
+        display: flex;
+        gap: 10px;
+    }
 }
