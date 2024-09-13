@@ -2,6 +2,7 @@ import styles from './borrowform.module.css'
 
 export default function BorrowForm() {
     return <section className={styles.borrow_form}>
+        <h3 className={styles.media_header}>Получите услугу на нашем сайте</h3>
         <div className={styles.container}>
             <nav className={styles.nav}>
                 <div className={styles.nav_text}>ЗАЙМ</div>
@@ -9,6 +10,7 @@ export default function BorrowForm() {
                 <div className={styles.nav_text}>БАНКРОТСТВО</div>
                 <div className={styles.nav_text}>ВОЗВРАТ ДОЛГОВ</div>
             </nav>
+            <hr className={styles.line}/>
             <form action="" className={styles.form}>
                 <div className={styles.cont_info}>
                     <label htmlFor="select" className={styles.label}>Получить услугу</label>
@@ -33,6 +35,10 @@ export default function BorrowForm() {
                     <input type="password" id='password2' className={styles.input}/>
                 </div>
             </form>
+            <div className={styles.media_confident}>
+            <input type="checkbox" />
+            <p className={styles.text_media_confident}>Я согласен на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</p>
+            </div>
             <div className={styles.container_policy}>
                 <div className={styles.confident_container}>
                         <input type="checkbox" />
