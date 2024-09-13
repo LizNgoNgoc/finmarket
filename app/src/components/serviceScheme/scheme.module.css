@@ -90,6 +90,10 @@
     display: none;
 }
 
+.ordinary_box_media  {
+    display: none;
+}
+
 @media (max-width: 500px) {
     .scheme_container {
         flex-direction: column;
@@ -104,6 +108,10 @@
         display: none;
     }
 
+    .container_boxes {
+        flex-direction: row;
+    }
+
     .box {
         display: none;
     }
@@ -115,5 +123,16 @@
     .pagination {
         display: flex;
         gap: 10px;
+    }
+
+    .ordinary_box_media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid rgb(249, 73, 107);
+        border-radius: 5px;
+        background: rgb(255, 255, 255);
+        padding: 15px 35px 16px 46px;
     }
 }

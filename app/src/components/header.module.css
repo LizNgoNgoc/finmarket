@@ -74,6 +74,8 @@
 
     .header_container {
         padding: 0;
+        display: flex;
+        gap: 55px;
     }
 
     .header_phone {
@@ -91,5 +93,10 @@
 
     .header_nav {
         display: none;
+    }
+
+    .menu_icon {
+        width: 55px;
+        height: 55px;
     }
 }

@@ -11,7 +11,7 @@ export default function Header() {
 
     return <header className={styles.header}>
         <div className={styles.header_container}>
-            <img src="" alt="img" />
+            <img src="./images/media/menu.png" alt="img" className={styles.menu_icon}/>
             <Link to="/"><img src="./images/header/logo.svg" alt="logo" /></Link>
             <div className={styles.header_container_info}>
                 <p className={styles.header_phone}>8 (912) 364-52-53 </p>

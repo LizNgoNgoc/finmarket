@@ -95,11 +95,11 @@
 
 @media (max-width: 500px) {
     .media_header {
-        color: rgb(30, 34, 46);
+        color: #1E222E;
         font-family: Inter;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 24px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
         text-align: center;
         margin-bottom: 20px;
     }

@@ -17,6 +17,18 @@ export default function Scheme() {
                 </div>
             </div>
             <div className={styles.container_boxes}>
+                <div className={styles.ordinary_box_media}>
+                        <h3 className={styles.header_box}>1 шаг</h3>
+                        <h3 className={styles.header_box}>Регистрация на сайте</h3>
+                        <p className={styles.text_box}>Создайте личный кабинет, указав электронную почту и номер телефона</p>
+                    </div>
+                    <div className={styles.ordinary_box_media}>
+                        <h3 className={styles.header_box}>2 шаг</h3>
+                        <h3 className={styles.header_box}>Заполние анкеты</h3>
+                        <p className={styles.text_box}>Внесите необходимые данные в анкету, отправьте ее на торги или 
+                            создайте готовое предложение и отправьте организациям: 
+                            частный инвестор, кредитный брокер, ломбард</p>
+                    </div>
                 <div className={styles.box}>
                     <div className={styles.box_item}>
                         <h3 className={styles.header_box}>1 шаг</h3>
@@ -51,6 +63,16 @@ export default function Scheme() {
                         <p className={styles.text_box}>Получите деньги на самых выгодных для вас условиях.</p>
                     </div>
                 </div>
+                <div className={styles.ordinary_box_media}>
+                        <h3 className={styles.header_box}>4 шаг</h3>
+                        <h3 className={styles.header_box}>Обмен информацией по результатам торгов</h3>
+                        <p className={styles.text_box}>Обменяйтесь данными с кредитной организацией, частным инвестором или ломбардом и заключите договор займа.</p>
+                    </div>
+                    <div className={styles.ordinary_box_media}>
+                        <h3 className={styles.header_box}>5 шаг</h3>
+                        <h3 className={styles.header_box}>Получение займа</h3>
+                        <p className={styles.text_box}>Получите деньги на самых выгодных для вас условиях.</p>
+                    </div>
             </div>
             <div className={styles.pagination}>
                 <img src="./images/media/pagination1.png" alt="img" />
