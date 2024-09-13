@@ -50,3 +50,13 @@
     line-height: 24px;
 }
 
+@media (max-width:500px) {
+    .header_attention {
+        text-align: center;
+    }
+
+    .img_attention {
+        display: none;
+    }
+}
+
