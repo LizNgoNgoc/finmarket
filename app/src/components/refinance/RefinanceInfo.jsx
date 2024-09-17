@@ -19,7 +19,7 @@ export default function RefinanceInfo() {
                 <button className={styles.ref_btn}>получить услугу</button>
             </div>
             <div className={styles.img_container}>
-                <img src="./images/refinance/refinance_main.png" alt="img" />
+                <img src="./images/refinance/refinance_main.png" alt="img" className={styles.img_ref} />
             </div>
         </div>
         <div className={styles.rules_info}>
