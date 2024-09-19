@@ -9,6 +9,7 @@ export default function BuncForm() {
             <div className={styles.nav_text}>БАНКРОТСТВО</div>
             <div className={styles.nav_text}>ВОЗВРАТ ДОЛГОВ</div>
         </nav>
+        <hr className={styles.line}/>
         <form action="" className={styles.form}>
             <div className={styles.cont_info}>
                 <label htmlFor="select" className={styles.label}>Получить услугу</label>
@@ -34,6 +35,10 @@ export default function BuncForm() {
             </div>
         </form>
         <div className={styles.container_policy}>
+        <div className={styles.media_confident}>
+                <input type="checkbox" />
+                <p className={styles.text_media_confident}>Я согласен на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</p>
+        </div>
             <div className={styles.confident_container}>
                     <input type="checkbox" />
                     <p className={styles.text_confident}>Нажимая на кнопку Далее, Вы соглашаетесь на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</p>
