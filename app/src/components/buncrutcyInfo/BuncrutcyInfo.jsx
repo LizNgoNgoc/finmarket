@@ -18,7 +18,7 @@ export default function BuncrutcyInfo() {
                 <button className={styles.bunc_btn}>получить услугу</button>
             </div>
             <div className={styles.img_container}>
-                <img src="./images/bunc/bunc_main.png" alt="img" />
+                <img src="./images/bunc/bunc_main.png" className={styles.img_bunc} alt="img" />
             </div>
         </div>
         <div className={styles.rules_info}>

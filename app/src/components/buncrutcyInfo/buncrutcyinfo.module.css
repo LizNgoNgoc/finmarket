@@ -109,3 +109,25 @@
     font-size: 20px;
     font-weight: 400;
 }
+
+@media (max-width: 500px) {
+    .links {
+        display: none;
+    }
+
+    .bunc_header {
+        text-align: center;
+    }
+
+    .bunc_btn {
+        margin: 0 auto;
+    }
+
+    .img_bunc {
+        display: none;
+    }
+
+    .rules_info {
+        flex-direction: column;
+    }
+}
