@@ -30,6 +30,13 @@ export default function SchemeBunc() {
                         с выбранной организацией, как при «Торгах», так и при создании/выборе готовых предложений</p>
             </div>
         </div>
+            <div className={styles.pagination}>
+                <img src="./images/media/pagination1.png" alt="img" />
+                <img src="./images/media/pagination1.png" alt="img" />
+                <img src="./images/media/pagination1.png" alt="img" />
+                <img src="./images/media/pagination1.png" alt="img" />
+                <img src="./images/media/pagination1.png" alt="img" />
+            </div>
     </div>
 </section>
 }
