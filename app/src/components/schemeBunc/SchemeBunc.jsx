@@ -1,6 +1,18 @@
 import styles from './schemebunc.module.css'
+import { useRef, useState, useEffect } from 'react'
 
 export default function SchemeBunc() {
+    const [pag, setPag] = useState(0)
+
+    const ref = useRef(null)
+
+    useEffect(() => {
+        ref.current.scroll({
+            top: 0,
+            left: ref.current.clientWidth * pag,
+            behavior: 'smooth'
+        })
+    }, [pag])
     return <section className={styles.scheme}>
     <div className={styles.scheme_container}>
         <div className={styles.scheme_content}>
@@ -10,7 +22,7 @@ export default function SchemeBunc() {
                     Юридическую организацию / Юристов / Адвокатов, готовых оказать вам услуги по банкротству на самых выгодных условиях.</p>
             </div>
         </div>
-        <div className={styles.container_boxes}>
+        <div ref={ref}className={styles.container_boxes}>
             <div className={styles.ordinary_box}>
                     <h3 className={styles.header_box}>1 шаг</h3>
                     <h3 className={styles.header_box}>Регистрация на сайте</h3>
@@ -31,11 +43,9 @@ export default function SchemeBunc() {
             </div>
         </div>
             <div className={styles.pagination}>
-                <img src="./images/media/pagination1.png" alt="img" />
-                <img src="./images/media/pagination1.png" alt="img" />
-                <img src="./images/media/pagination1.png" alt="img" />
-                <img src="./images/media/pagination1.png" alt="img" />
-                <img src="./images/media/pagination1.png" alt="img" />
+                {Array.from(Array(3).keys()).map((item,index) => (
+                    <div className={styles.pagination_dots} key={index} onClick={() => setPag(index)}></div>
+                ))}
             </div>
     </div>
 </section>

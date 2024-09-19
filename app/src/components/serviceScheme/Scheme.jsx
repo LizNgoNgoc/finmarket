@@ -1,6 +1,21 @@
+import { useEffect, useRef, useState } from 'react'
 import styles from './scheme.module.css'
 
 export default function Scheme() {
+
+    const [pag, setPag] = useState(0)
+
+    const ref = useRef(null)
+
+    useEffect(() => {
+
+        ref.current.scroll({
+            top: 0,
+            left: ref.current.clientWidth * pag,
+            behavior: 'smooth'
+        })
+    }, [pag])
+
     return <section className={styles.scheme}>
         <div className={styles.scheme_container}>
             <div className={styles.scheme_content}>
@@ -16,7 +31,7 @@ export default function Scheme() {
                         объявляется Победителем.</p>
                 </div>
             </div>
-            <div className={styles.container_boxes}>
+            <div ref={ref} className={styles.container_boxes}>
                 <div className={styles.ordinary_box_media}>
                         <h3 className={styles.header_box}>1 шаг</h3>
                         <h3 className={styles.header_box}>Регистрация на сайте</h3>
@@ -75,11 +90,11 @@ export default function Scheme() {
                     </div>
             </div>
             <div className={styles.pagination}>
-                <img src="./images/media/pagination1.png" alt="img" />
-                <img src="./images/media/pagination1.png" alt="img" />
-                <img src="./images/media/pagination1.png" alt="img" />
-                <img src="./images/media/pagination1.png" alt="img" />
-                <img src="./images/media/pagination1.png" alt="img" />
+                {Array.from(Array(5).keys()).map((item, index) => (
+                    <div className={styles.pagintation_dote} key={index} onClick={() => {
+                        setPag(index)
+                    }}></div>
+                ))}            
             </div>
         </div>
     </section>

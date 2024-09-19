@@ -101,10 +101,25 @@
 
     .container_boxes {
         flex-direction: row;
+        overflow: hidden;
+        padding: 10px;
+        width: 100%;
+        gap: 20px;
     }
 
     .pagination {
         display: flex;
         gap: 10px;
+    }
+
+    .ordinary_box {
+        min-width: 100%;
+    }
+
+    .pagination_dots{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgb(249, 73, 107);
     }
 }
