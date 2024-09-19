@@ -117,6 +117,7 @@
 
     .bunc_header {
         text-align: center;
+        width: 100%;
     }
 
     .bunc_btn {
@@ -129,5 +130,9 @@
 
     .rules_info {
         flex-direction: column;
+    }
+
+    .img_container {
+        width: 0;
     }
 }
