@@ -285,4 +285,37 @@
     background-size: cover;
 }
 
+@media (max-width:500px) {
+    .txt {
+        display: none;
+    }
+
+    .txt_grey {
+        display: none;
+    }
+
+    .step {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav-text {
+        font-size: 10px;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+
+    .cont_own {
+        flex-direction: column;
+    }
+}
 
