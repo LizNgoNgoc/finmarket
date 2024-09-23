@@ -148,6 +148,9 @@ const Anket = observer(() => {
                         <input type="text" className={styles.input} value={stateUserData.step2.citizenship} name='citizenship' onInput={handleInp}/>
                     </div>
                 </div>
+                <div className={styles.input_city_media}>
+                        <input type="text" className={styles.input} value={stateUserData.step2.citizenship} name='citizenship' onInput={handleInp}/>
+                </div>
             </div>
            <div className={styles.link_btn}>
                 <button type='button' onClick={handleClick} className={styles.button}>следующий шаг</button>

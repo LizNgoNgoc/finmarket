@@ -286,6 +286,19 @@
 }
 
 @media (max-width:500px) {
+    .anket {
+        max-width: 500px;
+        padding: 0 40px;
+    }
+
+    .header {
+        font-size: 34px;
+    }
+
+    .organization {
+        margin-bottom: 30px;
+    }
+
     .txt {
         display: none;
     }
@@ -303,11 +316,11 @@
     }
 
     .nav {
-        gap: 10px;
+        gap: 8px;
     }
 
-    .nav-text {
-        font-size: 10px;
+    .nav_text {
+        font-size: 11px;
     }
 
     .cont {
@@ -316,6 +329,14 @@
 
     .cont_own {
         flex-direction: column;
+    }
+
+    .input_city {
+        display: none;
+    }
+
+    .input_city_media {
+        display: block;
     }
 }
 
