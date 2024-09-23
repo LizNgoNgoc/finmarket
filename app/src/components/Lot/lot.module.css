@@ -158,3 +158,40 @@
     width: 110px;
     margin: 0 auto;
 }
+
+@media (max-width: 500px) {
+    .lot {
+        max-width: 500px;
+        padding: 0;
+    }
+
+    .step {
+        display: none;
+    }
+
+    .nav {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .form {
+        padding: 30px 25px 30px 25px;
+    }
+
+    .container_info {
+        width: 100%;
+    }
+
+    .container_inputs {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .position_container {
+        gap: 120px;
+    }
+
+    .header {
+        font-size: 34px;
+    }
+}
