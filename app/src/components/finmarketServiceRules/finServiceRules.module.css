@@ -168,7 +168,7 @@
     .service_container {
         flex-direction: column;
         max-width: 500px;
-        padding-left: 0;
+        padding: 0 20px;
     }
 
     .service_text {
