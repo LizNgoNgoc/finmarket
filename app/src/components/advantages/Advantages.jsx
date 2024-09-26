@@ -34,10 +34,6 @@ export default function Advantages() {
                         <img src="./images/advantages/6.png" alt="img" />
                         <p className={styles.text_adv}>Конкуренция дает вам лучшее предложение</p>
                     </div>
-            
-            </div>
-            <div>
-                <video src=""></video>
             </div>
         </div>
     </section>

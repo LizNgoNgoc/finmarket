@@ -85,6 +85,7 @@
 @media (max-width: 500px) {
     .services {
         background-color: #375FEE;
+        margin-top: 80px;
     }
 
     .services_container {
