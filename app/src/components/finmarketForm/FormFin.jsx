@@ -16,7 +16,7 @@ export default function FormFin() {
     function handleSubmit(e) {
         e.preventDefault()
         console.log(formElements);
-        diapatch(setForm(formElements))
+        diapatch(setForm())
     }
     
     return <div className={styles.form_container}>
