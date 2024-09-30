@@ -2,9 +2,13 @@ import {  useState } from 'react'
 import styles from './formFin.module.css'
 import { Link } from 'react-router-dom'
 import {useValidationForm, validationFin} from '../../common/validationForm'
+import { useDispatch } from 'react-redux'
+import { setForm } from '../../redux/RegFormSlice'
 
 
 export default function FormFin() {
+    const diapatch = useDispatch()
+
     const [check, setCheck] = useState(false)
     const form = {phone: '', email: '', password: '', select: ''}
     const [ formElements, handleChange, formErrors, btnDisabled ] = useValidationForm(form, validationFin)
@@ -12,6 +16,7 @@ export default function FormFin() {
     function handleSubmit(e) {
         e.preventDefault()
         console.log(formElements);
+        diapatch(setForm(formElements))
     }
     
     return <div className={styles.form_container}>
