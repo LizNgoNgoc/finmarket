@@ -15,7 +15,7 @@ export function useValidationForm(inputs = {}, inputsValidation = {}) { //в к�
                 setFormErrors((prev) => ({...prev, [key] : {...prev[key], validity: true}})) //иначе успешно проходим валидацию
             }
         })
-        setBtnDisabled((Object.keys(formErrors).every(key=> formErrors[key].validity)) ) //кнопка блокируется если хотя бы один инпут не прошел валидацию
+        setBtnDisabled((Object.keys(formErrors).every(key=> formErrors[key].validity))) //кнопка блокируется если хотя бы один инпут не прошел валидацию
     }, [formElements])
 
     function handleChange(e) { //функция изменения значений инпутов

@@ -1,21 +1,26 @@
 import styles from './Modal.module.css'
 import { Link } from 'react-router-dom'
 import { observer } from 'mobx-react-lite'
+import { useDispatch } from 'react-redux'
+import { setForm } from '../../redux/RegFormSlice'
+
 
 
 
 const Modal = observer(({open, stateUserData}) => {
 
+    const dispatch = useDispatch()
+
     function handleSubmit(e) {
         e.preventDefault()
         console.log(stateUserData.step1)
+        dispatch(setForm())
     }
 
     function handleInp (e){
         stateUserData.setStep1(e.target.name, e.target.value)    
     }
 
-    
 
     return <section className={styles.overlay} onClick={(e) => e.target === e.currentTarget && open(false)}>
         <div className={styles.modal}>
