@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Modal from "../components/Modal/Modal";
 import { createPortal } from 'react-dom';
 import { useState } from "react";
-import stateUserData from '../store/modal';
 
 export default function Header() {
 
@@ -15,7 +14,7 @@ export default function Header() {
             <Link to="/"><img src="./images/header/logo.svg" alt="logo" /></Link>
             <div className={styles.header_container_info}>
                 <p className={styles.header_phone}>8 (912) 364-52-53 </p>
-            <div className={styles.header_container_login} onClick={() => setOpenModal(true)}>
+            <div className={styles.header_container_login} onClick={() => {}}>
                 <p className={styles.header_text}>ВОЙТИ</p>
                 <img src="./images/header/LogIn.png" className={styles.header_login} alt="login" />
             </div> 
@@ -29,6 +28,6 @@ export default function Header() {
             <Link className={styles.nav_paragraph}>Статьи</Link>
             <Link className={styles.nav_paragraph}>О проекте</Link>
         </nav>
-        {openModal && createPortal(<Modal open={setOpenModal} stateUserData={stateUserData} />, document.body)}
+        {openModal && createPortal(<Modal open={setOpenModal}  />, document.body)}
     </header>
 }

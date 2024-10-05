@@ -1,22 +1,26 @@
 import { useState, useEffect } from "react"
 
-export function useValidationForm(inputs = {}, inputsValidation = {}) { //в качестве аргументов передаем объект с инпутами 
- 
+export function useValidationForm(inputs, inputsValidation = {}) { //в качестве аргументов передаем объект с инпутами 
+    
     const [formElements, setFormElements] = useState(inputs) //передаем состояние инпутов
     const [formErrors, setFormErrors] = useState(inputsValidation) //передаем состояние, применяющее валидацию
     const [btnDisabled, setBtnDisabled] = useState(true) //передаем состояние блокировки кнопки
-
+    
     useEffect(() => {
         const arrKeys = Object.keys(formElements) //обращаемся к объектам по ключам
         arrKeys.forEach(key => { //перебираем массив объектов по ключам
-            if (!formErrors[key].pattern?.test(formElements[key]) || formElements[key] === '') { //проверяем начальное состояние ключа, если оно имеет значение паттерна валидации, либо пустоту
-                setFormErrors((prev) => ({...prev, [key] : {...prev[key], validity: false}})) //возвращаем ошибку
-            } else {
+            if (formErrors[key].pattern?.test(formElements[key].trim()) && formElements[key]?.length > 0) { //проверяем начальное состояние ключа, если оно имеет значение паттерна валидации, либо пустоту
                 setFormErrors((prev) => ({...prev, [key] : {...prev[key], validity: true}})) //иначе успешно проходим валидацию
+            } else {
+                setFormErrors((prev) => ({...prev, [key] : {...prev[key], validity: false}})) //возвращаем ошибку
             }
         })
-        setBtnDisabled((Object.keys(formErrors).every(key=> formErrors[key].validity))) //кнопка блокируется если хотя бы один инпут не прошел валидацию
+         //кнопка блокируется если хотя бы один инпут не прошел валидацию
     }, [formElements])
+
+    useEffect(() => {
+        setBtnDisabled((!Object.keys(formErrors).every(key=> formErrors[key].validity)))
+    }, [formErrors])
 
     function handleChange(e) { //функция изменения значений инпутов
          setFormElements({...formElements, [e.target.name]: e.target.value})
@@ -34,7 +38,7 @@ export function useValidationForm(inputs = {}, inputsValidation = {}) { //в к�
 
 export const validationFin = { //паттерны валидации
     select: {
-        pattern: /^$|\s+/,
+        pattern: /\s*/,
         message: 'Поле обязательно к заполнению',
         validity: false
     },
@@ -53,4 +57,5 @@ export const validationFin = { //паттерны валидации
         message: 'Пароль должен быть больше 6 символов и сожедержать кирилицу, цифры и спецсимвол',
         validity: false
     },
+
 }

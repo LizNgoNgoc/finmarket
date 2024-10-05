@@ -8,15 +8,12 @@ import { setForm } from '../../redux/RegFormSlice'
 
 export default function FormFin() {
     const diapatch = useDispatch()
-
     const [check, setCheck] = useState(false)
-    const form = {phone: '', email: '', password: '', select: ''}
-    const [ formElements, handleChange, formErrors, btnDisabled ] = useValidationForm(form, validationFin)
+    const [formElements, handleChange, formErrors, btnDisabled] = useValidationForm({select:'',phone:'',email:'',password: '',}, validationFin)
 
     function handleSubmit(e) {
         e.preventDefault()
-        console.log(formElements);
-        diapatch(setForm())
+        diapatch(setForm(formElements))
     }
     
     return <div className={styles.form_container}>
@@ -28,7 +25,7 @@ export default function FormFin() {
         </nav>
         <hr className={styles.form_line}/>
         <form onSubmit={handleSubmit} className={styles.form} noValidate>
-            <select  onChange={handleChange} name='select' className={styles.form_inp}>
+            <select onChange={handleChange} name='select' className={styles.form_inp}>
                 <option value="" className={styles.option}></option>
                 <option value="Получить займ" className={styles.option}>Получить займ</option>
                 <option value="Рефинансирование займа" className={styles.option}>Рефинансирование займа</option>
@@ -46,7 +43,7 @@ export default function FormFin() {
                 <input type="checkbox" checked={check} onChange={(e) => setCheck(e.target.checked)} name='remember' className={styles.form_checkbox}/>
                 <p className={styles.text_confident}>Я согласен на обработку данных согласно Пользовательскому соглашению и Политике конфиденциальности</p>
             </div>
-            <button className={styles.form_btn} disabled={!(btnDisabled && check)}>УЧАСТВОВАТЬ</button>
+            <button className={styles.form_btn} disabled={!(!btnDisabled && check)}>УЧАСТВОВАТЬ</button>
         </form>
     </div>
 }

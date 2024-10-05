@@ -14,7 +14,7 @@ export const regFormSlice = createSlice ({
     initialState,
     reducers: {
         setForm: (state, action) => {
-            state.form = {...state.form, [action.payload.target.name] : action.payload.target.value}
+            state.form = action.payload
         }
     }
 })

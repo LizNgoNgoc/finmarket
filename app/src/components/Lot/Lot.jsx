@@ -1,22 +1,18 @@
 import styles from './lot.module.css'
-import { observer } from 'mobx-react-lite'
-import stateUserData from '../../store/modal';
 
 
-const Lot = observer(() => {
+
+const Lot = () => {
 
     
     function handleChange(e) {
-        stateUserData.setStep3(e.target.name, e.target.checked)
     }
 
     function handleSubmit(e){
         e.preventDefault()
-        console.log(stateUserData.getFullStep())
     }
 
     function handleInp(e) {
-        stateUserData.setStep3(e.target.name, e.target.value)
     }
 
     return <section className={styles.lot}>
@@ -34,50 +30,50 @@ const Lot = observer(() => {
         <form action="" className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.container_info}>
                 <label htmlFor="" className={styles.label}>Населенный пункт получения услуги</label>
-                <input type="text" className={styles.input_text} value={stateUserData.step3.getService} name='getService' onInput={handleInp}/>
+                <input type="text" className={styles.input_text} value={''} name='getService' onInput={handleInp}/>
             </div>
             <div className={styles.container_inputs}>
                 <div className={styles.container_info}>
                     <label htmlFor="" className={styles.label}>Сумма займа от ₽</label>
-                    <input type="text" className={styles.input_text} value={stateUserData.step3.sum} name='sum' onInput={handleInp}/>
+                    <input type="text" className={styles.input_text} value={''} name='sum' onInput={handleInp}/>
                 </div>
                 <div className={styles.container_info}>
                     <label htmlFor="" className={styles.label}>Срок займа, мес.</label>
-                    <input type="text" className={styles.input_text} value={stateUserData.step3.sumMonth} name='sumMonth' onInput={handleInp}/>
+                    <input type="text" className={styles.input_text} value={''} name='sumMonth' onInput={handleInp}/>
                 </div>
                 <div className={styles.container_info}>
                     <label htmlFor="" className={styles.label}>Желаемая ставка, % годовых</label>
-                    <input type="text" className={styles.input_text} value={stateUserData.step3.percent} name='percent' onInput={handleInp}/>
+                    <input type="text" className={styles.input_text} value={''} name='percent' onInput={handleInp}/>
                 </div>
             </div>
             <div className={styles.position_container}>
                 <div className={styles.check_container}>
                     <p className={styles.header_check}>Обеспечение:</p>
                     <div className={styles.checkbox_container}>
-                        <input type="checkbox" className={styles.checkbox} name='building' checked={stateUserData.step3.building} onChange={handleChange}/>
+                        <input type="checkbox" className={styles.checkbox} name='building' checked={''} onChange={handleChange}/>
                         <label htmlFor="" className={styles.check_label}>Недвижимость</label>
                     </div>
                     <div className={styles.checkbox_container}>
-                        <input type="checkbox" className={styles.checkbox} name='auto' checked={stateUserData.step3.auto} onChange={handleChange}/>
+                        <input type="checkbox" className={styles.checkbox} name='auto' checked={''} onChange={handleChange}/>
                         <label htmlFor="" className={styles.check_label}>Автотранспорт</label>
                     </div>
                     <div className={styles.checkbox_container}>
-                        <input type="checkbox" className={styles.checkbox} name='diamonds' checked={stateUserData.step3.diamonds} onChange={handleChange}/>
+                        <input type="checkbox" className={styles.checkbox} name='diamonds' checked={''} onChange={handleChange}/>
                         <label htmlFor="" className={styles.check_label}>Драгоценность</label>
                     </div>
                 </div>
                 <div className={styles.check_container}>
                     <p className={styles.header_check}>Кто участвует в торгах:</p>
                     <div className={styles.checkbox_container}>
-                        <input type="checkbox" className={styles.checkbox} name='lombard' checked={stateUserData.step3.lombard} onChange={handleChange}/>
+                        <input type="checkbox" className={styles.checkbox} name='lombard' checked={''} onChange={handleChange}/>
                         <label htmlFor="" className={styles.check_label}>Ломбард</label>
                     </div>
                     <div className={styles.checkbox_container}>
-                        <input type="checkbox" className={styles.checkbox} name='creditBroker' checked={stateUserData.step3.creditBroker} onChange={handleChange}/>
+                        <input type="checkbox" className={styles.checkbox} name='creditBroker' checked={''} onChange={handleChange}/>
                         <label htmlFor="" className={styles.check_label}>Кредитный брокер</label>
                     </div>
                     <div className={styles.checkbox_container}>
-                        <input type="checkbox" className={styles.checkbox} name='broker' checked={stateUserData.step3.broker} onChange={handleChange}/>
+                        <input type="checkbox" className={styles.checkbox} name='broker' checked={''} onChange={handleChange}/>
                         <label htmlFor="" className={styles.check_label}>Частный кредитор</label>
                     </div>
                 </div>
@@ -85,6 +81,6 @@ const Lot = observer(() => {
             <button className={styles.button}>далее</button>
         </form>
     </section>
-})
+}
 
 export default Lot

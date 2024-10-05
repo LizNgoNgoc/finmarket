@@ -1,10 +1,9 @@
 import styles from './anket.module.css'
 import { useState } from 'react';
-import { observer } from 'mobx-react-lite'
-import stateUserData from '../../store/modal';
+
 import { useNavigate } from 'react-router-dom';
 
-const Anket = observer(() => {
+const Anket = () => {
     const[stars, setStars] = useState([...Array(5)].fill(0))
     const [checked, setChecked] = useState(true)
     const navigate = useNavigate()
@@ -26,11 +25,10 @@ const Anket = observer(() => {
 
     function handleSubmit(e){
         e.preventDefault()
-        console.log(stateUserData.getStep2())
     }
 
     function handleInp(e) {
-        stateUserData.setStep2(e.target.name, e.target.value)
+  
     }
 
     return <section className={styles.anket}>
@@ -68,46 +66,46 @@ const Anket = observer(() => {
                 <div className={styles.cont}>
                     <div className={styles.container_form}>
                         <label htmlFor="" className={styles.lab}>Контактное лицо *</label>
-                        <input type="text" className={styles.input} value={stateUserData.step2.user} name='user' onInput={handleInp}/>
+                        <input type="text" className={styles.input} value={''} name='user' onInput={handleInp}/>
                     </div>
                     <div className={styles.container_form}>
                         <label htmlFor="" className={styles.lab}>Телефон *</label>
-                        <input type="text" className={styles.input} value={stateUserData.step2.phone} name='phone' onInput={handleInp}/>
+                        <input type="text" className={styles.input} value={''} name='phone' onInput={handleInp}/>
                     </div>
                     <div className={styles.container_form}>
                         <label htmlFor="" className={styles.lab}>Email *</label>
-                        <input type="text" className={styles.input} value={stateUserData.step2.email} name='email' onInput={handleInp}/>
+                        <input type="text" className={styles.input} value={''} name='email' onInput={handleInp}/>
                     </div>
                 </div>
                 <div className={styles.cont}>
                     <div className={styles.container_form}>
                         <label htmlFor="" className={styles.lab}>Пол</label>
-                        <input type="text" className={styles.input} value={stateUserData.step2.sex} name='sex' onInput={handleInp}/>
+                        <input type="text" className={styles.input} value={''} name='sex' onInput={handleInp}/>
                     </div>
                     <div className={styles.container_form}>
                         <label htmlFor="" className={styles.lab}>Дата рождения</label>
-                        <input type="text" className={styles.input} value={stateUserData.step2.dataBirth} name='dataBirth' onInput={handleInp}/>
+                        <input type="text" className={styles.input} value={''} name='dataBirth' onInput={handleInp}/>
                     </div>
                 </div>
             </div>
             <h3 className={styles.header_contact}>Город регистрации</h3>
             <div className={styles.container_city}>
                     <label htmlFor="" className={styles.lab}>Город</label>
-                    <input type="text" className={styles.input} value={stateUserData.step2.city} name='city' onInput={handleInp}/>
+                    <input type="text" className={styles.input} value={''} name='city' onInput={handleInp}/>
             </div>
             <h3 className={styles.header_contact}>Город фактического проживания</h3>
             <div className={styles.city_life}>
-                <input type="checkbox" value={stateUserData.step2.sameAddress} name='sameAddress' onChange={handleCheck}/>
+                <input type="checkbox" value={''} name='sameAddress' onChange={handleCheck}/>
                 <label htmlFor="" className={styles.registration}>Совпадает с городом регистрации</label>
             </div>
             <div className={styles.cont_own}>
                 <div className={styles.container_form}>
                     <label htmlFor="" className={styles.lab}>Город</label>
-                    <input type="text" className={styles.input} value={stateUserData.step2.registration} name='registration' onInput={handleInp}/>
+                    <input type="text" className={styles.input} value={''} name='registration' onInput={handleInp}/>
                 </div>
                 <div className={styles.container_form}>
                     <label htmlFor="" className={styles.lab}>Тип собственности</label>
-                    <input type="text" className={styles.input} value={stateUserData.step2.owner} name='owner' onInput={handleInp}/>
+                    <input type="text" className={styles.input} value={''} name='owner' onInput={handleInp}/>
                 </div>
             </div>
             <h3 className={styles.header_contact}>Другое</h3>
@@ -145,11 +143,11 @@ const Anket = observer(() => {
                         <label htmlFor="" className={styles.answer_text}>Нет</label>
                     </div>
                     <div className={styles.input_city}>
-                        <input type="text" className={styles.input} value={stateUserData.step2.citizenship} name='citizenship' onInput={handleInp}/>
+                        <input type="text" className={styles.input} value={''} name='citizenship' onInput={handleInp}/>
                     </div>
                 </div>
                 <div className={styles.input_city_media}>
-                        <input type="text" className={styles.input} value={stateUserData.step2.citizenship} name='citizenship' onInput={handleInp}/>
+                        <input type="text" className={styles.input} value={''} name='citizenship' onInput={handleInp}/>
                 </div>
             </div>
            <div className={styles.link_btn}>
@@ -157,6 +155,6 @@ const Anket = observer(() => {
            </div>
         </form>
     </section>
-})
+}
 
 export default Anket
