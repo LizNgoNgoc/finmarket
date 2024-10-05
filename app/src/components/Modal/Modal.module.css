@@ -9,7 +9,6 @@
 }
 
 .modal {
-    min-width: 780px;
     min-height: 616px;
     padding: 40px;
     box-sizing: border-box;
@@ -218,5 +217,7 @@
     color: red;
     /* display: none; */
 }
+
+
 
 
