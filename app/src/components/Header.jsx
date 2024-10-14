@@ -1,5 +1,5 @@
 import styles from './header.module.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Modal from "../components/Modal/Modal";
 import { createPortal } from 'react-dom';
 import { useState } from "react";
@@ -7,6 +7,11 @@ import { useState } from "react";
 export default function Header() {
 
     const [openModal, setOpenModal] = useState(false)
+    const navigate = useNavigate()
+
+    function handleSelect(e) {
+        navigate(e.target.value)
+    }
 
     return <header className={styles.header}>
         <div className={styles.header_container}>
@@ -22,8 +27,8 @@ export default function Header() {
         </div>
         <hr className={styles.header_line}/>
         <nav className={styles.header_nav}>
-            <select className={styles.header_select}>
-                <option className={styles.nav_paragraph}>Услуги</option>
+            <select onChange={handleSelect} className={styles.header_select}>
+                <option value="/" className={styles.nav_paragraph}>Услуги</option>
                 <option value="/borrow" className={styles.nav_paragraph}>Займ</option>
                 <option value="/refinance" className={styles.nav_paragraph}>Рефинансирование</option>
                 <option value="/buncrutcy" className={styles.nav_paragraph}>Банкротство</option>
