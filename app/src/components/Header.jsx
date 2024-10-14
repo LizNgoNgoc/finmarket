@@ -22,7 +22,13 @@ export default function Header() {
         </div>
         <hr className={styles.header_line}/>
         <nav className={styles.header_nav}>
-            <Link className={styles.nav_paragraph}>Услуги</Link>
+            <select className={styles.header_select}>
+                <option className={styles.nav_paragraph}>Услуги</option>
+                <option value="/borrow" className={styles.nav_paragraph}>Займ</option>
+                <option value="/refinance" className={styles.nav_paragraph}>Рефинансирование</option>
+                <option value="/buncrutcy" className={styles.nav_paragraph}>Банкротство</option>
+                <option value="/debts" className={styles.nav_paragraph}>Возврат долгов</option>
+            </select>
             <Link className={styles.nav_paragraph}>Финансовые продукты</Link>
             <Link className={styles.nav_paragraph}>Юридическая помощь</Link>
             <Link className={styles.nav_paragraph}>Статьи</Link>

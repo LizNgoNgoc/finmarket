@@ -1,11 +1,7 @@
 import styles from './Modal.module.css'
 import { Link } from 'react-router-dom'
-import { observer } from 'mobx-react-lite'
 import { useDispatch } from 'react-redux'
 import { setForm } from '../../redux/RegFormSlice'
-
-
-
 
 const Modal = ({open}) => {
 
