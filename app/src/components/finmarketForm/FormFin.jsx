@@ -1,31 +1,37 @@
 import { useState } from 'react'
 import styles from './formFin.module.css'
-import { current } from '@reduxjs/toolkit'
 import FormBorrow from './FormBorrow'
 import FormRefinance from './FormRefinance'
+import FormDebts from './FormDebts'
+import FormBunc from './FormBunc'
 
 
 
 export default function FormFin() {
-    const [show, setShow] = useState(false)
+    const [showBorrow, setShowBorrow] = useState(true)
+    const [showRef, setShowRef] = useState(false)
+    const [showBunc, setShowBunc] = useState(false)
+    const [showDebts, setShowDebts] = useState(false)
 
-    const handleBorrow = (e) => {
-        setShow(current => !current)
+    function switchState (b1, b2, b3, b4){
+        setShowBorrow(b1)
+        setShowRef(b2)
+        setShowBunc(b3)
+        setShowDebts(b4)
     }
 
-    const handleRef = (e) => {
-        setShow(current => !current)
-    }
 
     return <div className={styles.form_container}>
         <nav className={styles.nav_form}>
-            <button className={styles.link_nav} onClick={handleBorrow}>ЗАЙМ</button>
-            <button className={styles.link_nav} onClick={handleRef}>РЕФИНАНСИРОВАНИЕ</button>
-            <button className={styles.link_nav}>БАНКРОТСТВО</button>
-            <button className={styles.link_nav}>ВОЗВРАТ ДОЛГОВ</button>
+            <button className={styles.link_nav} onClick={() => switchState(true, false, false, false)}>ЗАЙМ</button>
+            <button className={styles.link_nav} onClick={() => switchState(false, true, false, false)}>РЕФИНАНСИРОВАНИЕ</button>
+            <button className={styles.link_nav} onClick={() => switchState(false, false, true, false)}>БАНКРОТСТВО</button>
+            <button className={styles.link_nav} onClick={() => switchState(false, false, false, true)}>ВОЗВРАТ ДОЛГОВ</button>
         </nav>
         <hr className={styles.form_line}/>
-        {show && <FormBorrow />}
-        {show && <FormRefinance />}
+        {showBorrow && !showRef && !showBunc && !showDebts && <FormBorrow />}
+        {!showBorrow && showRef && !showBunc && !showDebts && <FormRefinance />}
+        {!showBorrow && !showRef && showBunc && !showDebts && <FormDebts />}
+        {!showBorrow && !showRef && !showBunc && showDebts && <FormBunc />}
     </div>
 }

@@ -4,7 +4,7 @@ import {useValidationForm, validationFin} from '../../common/validationForm'
 import { useDispatch } from 'react-redux'
 import { setForm } from '../../redux/RegFormSlice'
 
-export default function FormBorrow () {
+export default function FormDebts () {
     const diapatch = useDispatch()
     const [check, setCheck] = useState(false)
     const [formElements, handleChange, formErrors, btnDisabled] = useValidationForm({select:'',phone:'',email:'',password: '',}, validationFin)
