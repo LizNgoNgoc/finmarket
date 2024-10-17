@@ -1,20 +1,31 @@
+import { useState } from 'react'
 import styles from './formFin.module.css'
-import { Link } from 'react-router-dom'
-import FormBorrow from '../Forms/FormBorrow'
+import { current } from '@reduxjs/toolkit'
+import FormBorrow from './FormBorrow'
+import FormRefinance from './FormRefinance'
 
 
 
 export default function FormFin() {
-    
-    
+    const [show, setShow] = useState(false)
+
+    const handleBorrow = (e) => {
+        setShow(current => !current)
+    }
+
+    const handleRef = (e) => {
+        setShow(current => !current)
+    }
+
     return <div className={styles.form_container}>
         <nav className={styles.nav_form}>
-            <Link to='/borrow' className={styles.link_nav}>ЗАЙМ</Link>
-            <Link to='/refinance' className={styles.link_nav}>РЕФИНАНСИРОВАНИЕ</Link>
-            <Link to='/buncrutcy' className={styles.link_nav}>БАНКРОТСТВО</Link>
-            <Link to='/debts' className={styles.link_nav}>ВОЗВРАТ ДОЛГОВ</Link>
+            <button className={styles.link_nav} onClick={handleBorrow}>ЗАЙМ</button>
+            <button className={styles.link_nav} onClick={handleRef}>РЕФИНАНСИРОВАНИЕ</button>
+            <button className={styles.link_nav}>БАНКРОТСТВО</button>
+            <button className={styles.link_nav}>ВОЗВРАТ ДОЛГОВ</button>
         </nav>
         <hr className={styles.form_line}/>
-        <FormBorrow />
+        {show && <FormBorrow />}
+        {show && <FormRefinance />}
     </div>
 }
