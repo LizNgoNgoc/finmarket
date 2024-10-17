@@ -16,11 +16,7 @@ export default function FormRefinance() {
 
     return  <form onSubmit={handleSubmit} className={styles.form} noValidate>
     <select onChange={handleChange} name='select' className={styles.form_inp}>
-        <option value="" className={styles.option}></option>
-        <option value="Получить займ" className={styles.option}>Получить займ</option>
         <option value="Рефинансирование займа" className={styles.option}>Рефинансирование займа</option>
-        <option value="Банкротство" className={styles.option}>Банкротство</option>
-        <option value="Возврат долгов" className={styles.option}>Возврат долгов</option>
     </select>
     <p className={`${styles.error}`}>{formErrors.select.validity ? '' : formErrors.select.message}</p>
     <input type="phone" name="phone" placeholder='Телефон' onInput={handleChange} className={styles.form_inp}/>
