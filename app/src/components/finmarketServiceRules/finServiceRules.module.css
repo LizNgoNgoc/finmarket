@@ -162,13 +162,18 @@
     }
 
     .service_info {
-        width: 500px;
+        width: 100%;
+        padding-top: 5px;
     }
 
     .service_container {
         flex-direction: column;
         max-width: 500px;
         padding: 0 20px;
+    }
+
+    .service_header {
+        margin-bottom: 10px;
     }
 
     .service_text {
@@ -183,8 +188,20 @@
         flex-direction: column;
     }
 
+    .rules_part_media {
+        flex-direction: column;
+    }
+
+    .media {
+        width: 100%;
+    }
+
+    .text_container {
+        width: 100%;
+    }
+
     .text_container_media {
-        width: 421px;
+        width: 100%;
     }
 
     .first_container {

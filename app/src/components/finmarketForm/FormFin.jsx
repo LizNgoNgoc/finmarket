@@ -16,22 +16,22 @@ export default function FormFin() {
     })
 
 
-    function switchState (){
-        setShow({})
+    function switchState (key){
+        setShow({...show, borrow: false, refinance: false, bunc: false, debts: false, [key]: true})
     }
 
 
     return <div className={styles.form_container}>
         <nav className={styles.nav_form}>
-            <button className={styles.link_nav} onClick={() => switchState(true, false, false, false)}>ЗАЙМ</button>
-            <button className={styles.link_nav} onClick={() => switchState(false, true, false, false)}>РЕФИНАНСИРОВАНИЕ</button>
-            <button className={styles.link_nav} onClick={() => switchState(false, false, true, false)}>БАНКРОТСТВО</button>
-            <button className={styles.link_nav} onClick={() => switchState(false, false, false, true)}>ВОЗВРАТ ДОЛГОВ</button>
+            <button className={styles.link_nav} name={show.borrow} onClick={() => switchState('borrow')}>ЗАЙМ</button>
+            <button className={styles.link_nav} name={show.refinance}  onClick={() => switchState('refinance')}>РЕФИНАНСИРОВАНИЕ</button>
+            <button className={styles.link_nav} name={show.bunc}  onClick={() => switchState('bunc')}>БАНКРОТСТВО</button>
+            <button className={styles.link_nav} name={show.debts} onClick={() => switchState('debts')}>ВОЗВРАТ ДОЛГОВ</button>
         </nav>
         <hr className={styles.form_line}/>
         {show.borrow && <FormBorrow />}
         {show.refinance && <FormRefinance />}
-        {show.bunc && <FormDebts />}
-        {show.debts && <FormBunc />}
+        {show.bunc && <FormBunc />}
+        {show.debts && <FormDebts />}
     </div>
 }

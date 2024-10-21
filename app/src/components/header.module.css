@@ -8,12 +8,11 @@
     justify-content: space-between;
     padding-left: 86px;
     padding-right: 90px;
+    width: 100%;
 }
 
 .header_container_info {
     display: flex;
-    width: 350px;
-    gap: 25px;
 }
 
 .header_phone {
@@ -81,12 +80,13 @@
 @media (max-width: 500px) {
     .header {
         max-width: 500px;
+        min-width: 300px;
     }
 
     .header_container {
         padding: 0;
         display: flex;
-        gap: 55px;
+        align-items: center;
     }
 
     .header_phone {
@@ -105,9 +105,13 @@
         display: none;
     }
 
+    .logo {
+        width: 170px;
+    }
+
     .menu_icon {
         display: block;
-        width: 55px;
-        height: 55px;
+        width: 42px;
+        height: 42px;
     }
 }
