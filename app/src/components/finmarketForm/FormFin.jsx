@@ -17,7 +17,7 @@ export default function FormFin() {
 
 
     function switchState (){
-        setShow()
+        setShow({})
     }
 
 
@@ -29,9 +29,9 @@ export default function FormFin() {
             <button className={styles.link_nav} onClick={() => switchState(false, false, false, true)}>ВОЗВРАТ ДОЛГОВ</button>
         </nav>
         <hr className={styles.form_line}/>
-        {show && <FormBorrow />}
-        {show && <FormRefinance />}
-        {show && <FormDebts />}
-        {show && <FormBunc />}
+        {show.borrow && <FormBorrow />}
+        {show.refinance && <FormRefinance />}
+        {show.bunc && <FormDebts />}
+        {show.debts && <FormBunc />}
     </div>
 }
