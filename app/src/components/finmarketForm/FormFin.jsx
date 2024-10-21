@@ -8,16 +8,16 @@ import FormBunc from './FormBunc'
 
 
 export default function FormFin() {
-    const [showBorrow, setShowBorrow] = useState(true)
-    const [showRef, setShowRef] = useState(false)
-    const [showBunc, setShowBunc] = useState(false)
-    const [showDebts, setShowDebts] = useState(false)
+    const [show, setShow] = useState({
+        borrow: true,
+        refinance: false,
+        bunc: false,
+        debts: false,
+    })
 
-    function switchState (b1, b2, b3, b4){
-        setShowBorrow(b1)
-        setShowRef(b2)
-        setShowBunc(b3)
-        setShowDebts(b4)
+
+    function switchState (){
+        setShow()
     }
 
 
@@ -29,9 +29,9 @@ export default function FormFin() {
             <button className={styles.link_nav} onClick={() => switchState(false, false, false, true)}>ВОЗВРАТ ДОЛГОВ</button>
         </nav>
         <hr className={styles.form_line}/>
-        {showBorrow && <FormBorrow />}
-        {!showBorrow && showRef && !showBunc && !showDebts && <FormRefinance />}
-        {!showBorrow && !showRef && showBunc && !showDebts && <FormDebts />}
-        {!showBorrow && !showRef && !showBunc && showDebts && <FormBunc />}
+        {show && <FormBorrow />}
+        {show && <FormRefinance />}
+        {show && <FormDebts />}
+        {show && <FormBunc />}
     </div>
 }
