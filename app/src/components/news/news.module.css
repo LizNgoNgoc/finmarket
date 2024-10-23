@@ -62,4 +62,8 @@
     .header_news {
         text-align: center;
     }
+
+    .img_news {
+        width: 100%;
+    }
 }

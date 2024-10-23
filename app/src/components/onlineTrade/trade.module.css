@@ -301,8 +301,15 @@
     }
 
     .category_trades {
-        padding-left: 10px;
+        padding-left: 15px;
         padding-right: 10px;
+        text-align: center;
+    }
+
+    .category_offers {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
     }
 
     .container_media {
@@ -376,7 +383,7 @@
         font-weight: 500;
         line-height: 15px;
         padding: 10px 20px 10px 20px;
-        margin-left: 70%;
+        margin-left: 60%;
     }
 
     .btn_arch {
