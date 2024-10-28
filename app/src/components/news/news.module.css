@@ -52,6 +52,26 @@
     
 }
 
+@media (max-width: 800px) {
+    .news_container {
+        display: none;
+    }
+
+    .news_media {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .header_news {
+        text-align: center;
+    }
+
+    .img_news {
+        width: 100%;
+    }
+}
+
 @media (max-width: 500px) {
     .news_container {
         display: none;

@@ -73,7 +73,8 @@
     width: 235px;
 }
 
-@media (max-width: 500px) {
+
+@media (max-width: 800px) {
     .link_content_media {
         display: flex;
         flex-direction: column;

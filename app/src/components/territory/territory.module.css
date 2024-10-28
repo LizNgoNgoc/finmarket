@@ -91,6 +91,61 @@
     color: #1E222E;
 }
 
+@media (max-width: 800px) {
+    .img {
+        display: none;
+    }
+
+    .img_container {
+        margin-bottom: 0;
+    }
+
+    .img_media {
+        display: block;
+        width: 100%;
+    }
+
+    .card_container {
+        display: none;
+    }
+
+    .card_container_cityes {
+        display: none;
+    }
+
+    .card_container_clients {
+        display: none;
+    }
+
+    .media_poffers {
+        display: flex;
+        gap: 16px;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    .text_count {
+        color: rgb(249, 73, 107);
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+
+    .text_media {
+        color: rgb(30, 34, 46);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    .coin_container {
+        gap: 0;
+        padding-left: 0;
+    }
+}
+
 @media (max-width: 500px) {
     .territory {
         max-width: 500px;

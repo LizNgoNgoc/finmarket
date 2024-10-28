@@ -155,6 +155,19 @@
     margin-bottom: 7px;
 }
 
+@media (max-width: 800px) {
+    .service_container {
+        padding-left: 0;
+    }
+
+    .rules_part_media {
+        flex-direction: column;
+    }
+
+    .rules_part {
+        flex-direction: column;
+    }
+}
 
 @media (max-width: 500px) {
     .text_container {

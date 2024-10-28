@@ -76,6 +76,12 @@
     width: 100%;
 }
 
+@media (max-width: 800px) {
+    .fin_container {
+        display: none;
+    }
+}
+
 @media (max-width: 500px) {
     .section_finmarket {
         padding: 0;

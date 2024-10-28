@@ -295,6 +295,25 @@
     max-height: 800px;
 }
 
+@media (max-width:800px) {
+    .container_media {
+        display: none;
+    }
+
+    .nav {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .table_names {
+        padding-bottom: 40px;
+    }
+
+    .media {
+        display: none;
+    }
+}
+
 @media (max-width: 500px) {
     .trade {
         margin-top: 50px;

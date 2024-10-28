@@ -82,6 +82,16 @@
     margin: 0 auto;
 }
 
+@media (max-width: 800px) {
+    .services_container {
+        flex-direction: column;
+    }
+
+    .serv_media {
+        display: none;
+    }
+}
+
 @media (max-width: 500px) {
     .services {
         background-color: #375FEE;
