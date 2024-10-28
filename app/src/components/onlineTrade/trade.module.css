@@ -295,22 +295,95 @@
     max-height: 800px;
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
+    .trade {
+        margin-top: 50px;
+    }
+
     .container_media {
-        display: none;
+        margin-bottom: 20px;
     }
 
     .nav {
-        gap: 0;
-        justify-content: space-between;
+        gap: 17px;
     }
 
-    .table_names {
-        padding-bottom: 40px;
+    .table_container {
+        display: none;
     }
 
     .media {
-        display: none;
+        max-width: none;
+        width: 100%;
+    }
+
+    .media_table {
+        width: 100%;
+        display: flex;
+    }
+
+    .table_headers {
+        background-color: #E8ECFF;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 6px 11px 9px;
+    }
+   
+    .table_td {
+        color: rgb(30, 34, 46);
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        text-transform: lowercase;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 6px 11px 9px;
+    }
+
+    .media_block {
+        display: flex;
+    }
+
+    .media_text {
+        color: rgb(30, 34, 46);
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+    .btn_media {
+        box-sizing: border-box;
+        border: 1px solid rgb(94, 129, 255);
+        border-radius: 5px;
+        color: rgb(30, 34, 46);
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        padding: 10px 20px 10px 20px;
+        margin-left: 80%;
+    }
+
+    .btn_arch {
+        box-sizing: border-box;
+        border: 1px solid rgb(94, 129, 255);
+        border-radius: 5px;
+        background: rgb(94, 129, 255);
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        padding: 10px 20px 10px 20px;
+        text-transform: uppercase;
+        margin-left: 37%;
     }
 }
 
